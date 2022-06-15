@@ -1,0 +1,21 @@
+pyscad\_lib.setting package
+===========================
+
+Submodules
+----------
+
+pyscad\_lib.setting.setting\_models module
+------------------------------------------
+
+.. automodule:: pyscad_lib.setting.setting_models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pyscad_lib.setting
+   :members:
+   :undoc-members:
+   :show-inheritance:

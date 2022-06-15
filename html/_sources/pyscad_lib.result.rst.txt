@@ -1,0 +1,21 @@
+pyscad\_lib.result package
+==========================
+
+Submodules
+----------
+
+pyscad\_lib.result.result\_models module
+----------------------------------------
+
+.. automodule:: pyscad_lib.result.result_models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pyscad_lib.result
+   :members:
+   :undoc-members:
+   :show-inheritance:

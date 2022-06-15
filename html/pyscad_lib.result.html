@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyscad_lib.result package &mdash; документация Scad IronPython Plugins 1.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="pyscad_lib.setting package" href="pyscad_lib.setting.html" />
+    <link rel="prev" title="pyscad_lib.model package" href="pyscad_lib.model.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Scad IronPython Plugins
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Документация библиотеки:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Быстрый старт</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyscad_lib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pyscad_lib.html">pyscad_lib package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pyscad_lib.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.editor.html">pyscad_lib.editor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.model.html">pyscad_lib.model package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pyscad_lib.result package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.setting.html">pyscad_lib.setting package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.view.html">pyscad_lib.view package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyscad_lib.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pyscad_lib.html#module-pyscad_lib.pyscad">pyscad_lib.pyscad module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pyscad_lib.html#module-pyscad_lib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="createplugin.html">Создание плагина</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="additionally.html">Дополнительно</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Scad IronPython Plugins</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">pyscad_lib</a> &raquo;</li>
+          <li><a href="pyscad_lib.html">pyscad_lib package</a> &raquo;</li>
+      <li>pyscad_lib.result package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pyscad-lib-result-package">
+<h1>pyscad_lib.result package<a class="headerlink" href="#pyscad-lib-result-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pyscad_lib.result.result_models">
+<span id="pyscad-lib-result-result-models-module"></span><h2>pyscad_lib.result.result_models module<a class="headerlink" href="#module-pyscad_lib.result.result_models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.ActionInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">ActionInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">typeAction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityFixedStep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityNode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityElem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.ActionInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс воздействия</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>typeAction</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Тип воздействия.</p></li>
+<li><p><strong>quantityFixedStep</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество шагов.</p></li>
+<li><p><strong>quantityNode</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество узлов.</p></li>
+<li><p><strong>quantityElem</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество элементов.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.DataTypeInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">DataTypeInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityAction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.DataTypeInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации о типе результатов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityAction</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество воздействий.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.EffortsResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">EffortsResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityUs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listUs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.EffortsResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс усилия в элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityUs</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество элементов в массиве listUs</p></li>
+<li><p><strong>listUs</strong> (<em>[</em><em>int</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив типов напряжений/усилий вычисленных для элемента с номером NumElem</p></li>
+<li><p><strong>quantityData</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Общее количество данных (Зависит от кол-ва расчетных сечений элемента)</p></li>
+<li><p><strong>listData</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – <p>Массив данных напряжений/усилий</p>
+<p>Для каждой точки выдачи напряжений/усилий – значения в порядке, определяемом массивом ListUs.</p>
+<p>(зависит от кол-ва расчетных сечений элемента)</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.FactorsInfoDispResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">FactorsInfoDispResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factorStringData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factorValueData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factorFormulaData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.FactorsInfoDispResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс фактора заданного армирования</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>factorStringData</strong> (<em>str</em><em>, </em><em>defaults to None</em>) – Имя фактора</p></li>
+<li><p><strong>factorValueData</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Значение фактора</p></li>
+<li><p><strong>factorFormulaData</strong> (<em>str</em><em>, </em><em>defaults to None</em>) – Формула РСУ при которой вычислен фактор</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.FixedStepInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">FixedStepInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRHS</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listComb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.FixedStepInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс нелинейных шагов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityRHS</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество правых частей.</p></li>
+<li><p><strong>listComb</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Список коэффициентов загружений.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.InfoDispResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">InfoDispResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantitySteelFactors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.InfoDispResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс кол-ва факторов вычисленных при экспертизе стального элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantitySteelFactors</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество факторов вычисленных при экспертизе стального элемента</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.InfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">InfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">liner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">efforts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RSPunch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityFixedStep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityLoadDyn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.InfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации о расчете</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>liner</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Линейный/нелинейный расчет (true – выполнен линейный расчет, false – выполнен нелинейный расчет.)</p></li>
+<li><p><strong>model</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Расчет формы колебаний (true – вычислены формы колебаний.)</p></li>
+<li><p><strong>displace</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Расчет перемещений узлов (true – вычислены перемещения.)</p></li>
+<li><p><strong>efforts</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – В расчете вычислены услия (true – вычислены усилия)</p></li>
+<li><p><strong>comb</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – В расчете вычислены комбинации усилий (true – вычислены комбинации усилий.)</p></li>
+<li><p><strong>rsu</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – В расчете вычислен РСУ. (true – РСУ вычислено.)</p></li>
+<li><p><strong>rsd</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – В расчете вычислен РСП. (true – РСП вычислено.)</p></li>
+<li><p><strong>rsr</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – В расчете вычислены расчетные сочетания реакций в связях.</p></li>
+<li><p><strong>RSPunch</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – В расчете вычислены расчетные сочетания продавливания.</p></li>
+<li><p><strong>quantityFixedStep</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Число точек сохраненных результатов в нелинейном процессе.</p></li>
+<li><p><strong>quantityLoadDyn</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Число динамических загружений.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.PlateResultDisp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">PlateResultDisp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AS1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AS2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AS3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AS4</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AWx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AWy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.PlateResultDisp" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс армирования пластины</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>AS1</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S1</p></li>
+<li><p><strong>AS2</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S2</p></li>
+<li><p><strong>AS3</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S3</p></li>
+<li><p><strong>AS4</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S4</p></li>
+<li><p><strong>AWx</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Погонная площадь поперечного армирования Wx</p></li>
+<li><p><strong>AWy</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Погонная площадь поперечного армирования Wy</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RCInfoDispResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RCInfoDispResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRCFactors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RCInfoDispResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс количество факторов при экспертизе железобетонного элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityRCFactors</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество факторов вычисленных при экспертизе железобетонного элемента</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RHSInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RHSInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typeEnvelope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSchemUnite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numLoadSchemUnite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numStep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procMassX</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procMassY</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procMassZ</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RHSInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс правой части загружения</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>defaults to None</em>) – Имя</p></li>
+<li><p><strong>typeEnvelope</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – <p>Тип информации</p>
+<p>Cм. Дополнение 3 в документации «Пользовательские расширения», поставляется со SCAD++</p>
+</p></li>
+<li><p><strong>numSchemUnite</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер задачи вариации.</p></li>
+<li><p><strong>numLoadSchemUnite</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер загружения в задаче вариации.</p></li>
+<li><p><strong>numStep</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер шага для нелинейного процесса.</p></li>
+<li><p><strong>value</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – <p>Собственные значения</p>
+<p>В зависимости от DataType (Дополнение 4 в документации «Пользовательские расширения», поставляется со SCAD++) собственные значения,</p>
+<p>момент времени при прямом интегрировании, коэффициент потери устойчивости</p>
+</p></li>
+<li><p><strong>procMassX</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Для формы колебаний процент масс по направлению X</p></li>
+<li><p><strong>procMassY</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Для формы колебаний процент масс по направлению Y</p></li>
+<li><p><strong>procMassZ</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Для формы колебаний процент масс по направлению Z</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RcFitInfoDispResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RcFitInfoDispResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRCFitResults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RcFitInfoDispResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс кол-во результатов подбора арматуры</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityRCFitResults</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество вычисленных результатов (количество сечений)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.ResultData">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">ResultData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.ResultData" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс значений</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityData</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Общее кол-во значений</p></li>
+<li><p><strong>listData</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Список данных</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.ResultDisp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">ResultDisp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AS1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AS2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AS3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AS4</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IWx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IWy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.ResultDisp" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс армирования стержня</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>AS1</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S1</p></li>
+<li><p><strong>AS2</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S2</p></li>
+<li><p><strong>AS3</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S3</p></li>
+<li><p><strong>AS4</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Площадь армирования S4</p></li>
+<li><p><strong>IWx</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Погонная площадь поперечного армирования Wx</p></li>
+<li><p><strong>IWy</strong> (<em>float</em><em>, </em><em>defaults to None</em>) – Погонная площадь поперечного армирования Wy</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsPunchInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsPunchInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRsPunchStr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsPunchInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации РС продавливания (укрупненный)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityRsPunchStr</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество вычисленных строк расчетных сочетаний продавливания для узла с номером NumNode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsPunchStrResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsPunchStrResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">groupRsPunch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCrit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crane</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsPunchStrResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс РС продавливания</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>groupRsPunch</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – <p>Номер вида группы загружения</p>
+<p>См. Дополнение 5 в документации «Пользовательские расширения», поставляется со SCAD++</p>
+</p></li>
+<li><p><strong>numCrit</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер критерия</p></li>
+<li><p><strong>seism</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия сейсмической нагрузки (true - есть сейсмическая нагрузка)</p></li>
+<li><p><strong>spec</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия специально несейсмической нагрузки (true - есть специальная нагрузка)</p></li>
+<li><p><strong>crane</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия кранов (true - есть кран)</p></li>
+<li><p><strong>transport</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия транспортных нагрузок (true - есть транспортная нагрузка)</p></li>
+<li><p><strong>quantityData</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Общее кол-во данных</p></li>
+<li><p><strong>listData</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Список данных усилий</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsdInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsdInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRsdStr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsdInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации РСП (укрупненный)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityRsdStr</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество вычисленных строк РСП для узла с номером NumNode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsdStrResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsdStrResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">groupRsd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCrit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crane</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityNumLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listNumLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsdStrResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс РСП</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>groupRsd</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – <p>Номер вида группы загружения</p>
+<p>См. Дополнение 5 в документации «Пользовательские расширения», поставляется со SCAD++</p>
+</p></li>
+<li><p><strong>numCrit</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер критерия</p></li>
+<li><p><strong>seism</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия сейсмической нагрузки (true - есть сейсмическая нагрузка)</p></li>
+<li><p><strong>spec</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия специально несейсмической нагрузки (true - есть специальная нагрузка)</p></li>
+<li><p><strong>crane</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия кранов (true - есть кран)</p></li>
+<li><p><strong>transport</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия транспортных нагрузок (true - есть транспортная нагрузка)</p></li>
+<li><p><strong>quantityNumLoad</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество загружений, вошедших в строку РСП</p></li>
+<li><p><strong>listNumLoad</strong> (<em>[</em><em>int</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив номеров загружений, вошедших в строку РСП</p></li>
+<li><p><strong>quantityCoef</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество коэффициентов для загружений, вошедших в строку РСП</p></li>
+<li><p><strong>listCoef</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив коэффициентов для загружений, вошедших в строку РСП</p></li>
+<li><p><strong>quantityData</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Общее кол-во данных</p></li>
+<li><p><strong>listData</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Список данных усилий</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsrInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsrInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRsrStr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsrInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации РСР (укрупненный)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityRsrStr</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество вычисленных строк РСР для узла с номером NumNode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsrStrResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsrStrResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">groupRsr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCrit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crane</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityNumLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listNumLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsrStrResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс РСР</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>groupRsr</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – <p>Номер вида группы загружения</p>
+<p>См. Дополнение 5 в документации «Пользовательские расширения», поставляется со SCAD++</p>
+</p></li>
+<li><p><strong>numCrit</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер критерия</p></li>
+<li><p><strong>seism</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия сейсмической нагрузки (true - есть сейсмическая нагрузка)</p></li>
+<li><p><strong>spec</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия специально несейсмической нагрузки (true - есть специальная нагрузка)</p></li>
+<li><p><strong>crane</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия кранов (true - есть кран)</p></li>
+<li><p><strong>transport</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия транспортных нагрузок (true - есть транспортная нагрузка)</p></li>
+<li><p><strong>quantityNumLoad</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество загружений, вошедших в строку РСП</p></li>
+<li><p><strong>listNumLoad</strong> (<em>[</em><em>int</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив номеров загружений, вошедших в строку РСП</p></li>
+<li><p><strong>quantityCoef</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество коэффициентов для загружений, вошедших в строку РСП</p></li>
+<li><p><strong>listCoef</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив коэффициентов для загружений, вошедших в строку РСП</p></li>
+<li><p><strong>quantityData</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Общее кол-во данных</p></li>
+<li><p><strong>listData</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Список данных усилий</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsuInfoResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsuInfoResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityRsuStr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityUs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listUs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsuInfoResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации РСУ (укрупненный)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityRsuStr</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество вычисленных строк РСУ для элемента с номером NumElem</p></li>
+<li><p><strong>quantityUs</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество элементов в массиве ListUs</p></li>
+<li><p><strong>listUs</strong> (<em>[</em><em>int</em><em>]</em><em>, </em><em>defaults to None</em>) – <p>Массив типов усилий вычисленных для элемента с номером NumElem</p>
+<p>См. Дополнение 6 в документации «Пользовательские расширения», поставляется со SCAD++</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.result.result_models.RsuStrResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.result.result_models.</span></span><span class="sig-name descname"><span class="pre">RsuStrResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groupRsu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCrit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seism</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crane</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityNumLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listNumLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantityData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.result.result_models.RsuStrResult" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numPoint</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер узла в элементе или номер сечения элемента</p></li>
+<li><p><strong>groupRsu</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – <p>Номер вида группы загружения</p>
+<p>См. Дополнение 5 в документации «Пользовательские расширения», поставляется со SCAD++</p>
+</p></li>
+<li><p><strong>numCrit</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Номер критерия</p></li>
+<li><p><strong>seism</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия сейсмической нагрузки (true - есть сейсмическая нагрузка)</p></li>
+<li><p><strong>spec</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия специально несейсмической нагрузки ( true - есть специальная нагрузка)</p></li>
+<li><p><strong>crane</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия кранов (true - есть кран)</p></li>
+<li><p><strong>transport</strong> (<em>bool</em><em>, </em><em>defaults to None</em>) – Признак наличия транспортных нагрузок (true - есть транспортная нагрузк)</p></li>
+<li><p><strong>quantityNumLoad</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество загружений, вошедших в строку РСУ</p></li>
+<li><p><strong>listNumLoad</strong> (<em>[</em><em>int</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив номеров загружений, вошедших в строку РСУ</p></li>
+<li><p><strong>quantityCoef</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Количество коэффициентов для загружений, вошедших в строку РСУ</p></li>
+<li><p><strong>listCoef</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Массив коэффициентов для загружений, вошедших в строку РСУ</p></li>
+<li><p><strong>quantityData</strong> (<em>int</em><em>, </em><em>defaults to None</em>) – Общее кол-во данных</p></li>
+<li><p><strong>listData</strong> (<em>[</em><em>float</em><em>]</em><em>, </em><em>defaults to None</em>) – Список данных усилий</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pyscad_lib.result">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyscad_lib.result" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="pyscad_lib.model.html" class="btn btn-neutral float-left" title="pyscad_lib.model package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="pyscad_lib.setting.html" class="btn btn-neutral float-right" title="pyscad_lib.setting package" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ScadSoft.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+pyscad\_lib.view package
+========================
+
+Submodules
+----------
+
+pyscad\_lib.view.view\_models module
+------------------------------------
+
+.. automodule:: pyscad_lib.view.view_models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pyscad_lib.view
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Создание плагина &mdash; документация Scad IronPython Plugins 1.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="pyscad_lib.view package" href="pyscad_lib.view.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Scad IronPython Plugins
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Документация библиотеки:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Быстрый старт</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">pyscad_lib</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Создание плагина</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Начало работы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lang-id-1049">Папка LANG_ID (папка 1049)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python">Папка Python(Не обязательная)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-cfg">Файл Plugin.cfg:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-js">Файл Plugin.js:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parameters-cfg">Parameters.cfg:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Функции и логика в Plugin.js</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Реализация Plugin.js</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pyplugin-py">Функции и логика в PyPlugin.py</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Реализация PyPlugin.py</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ironpython-scadpython">Объект IronPython - ScadPython</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scadpython-runactivateui-engine-path-silencemod-true">1. ScadPython.RunActivateUI(engine, path, silenceMod = true)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scadpython-runexecute-engine-path-silencemod-true">2. ScadPython.RunExecute(engine, path, silenceMod = true)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Scad IronPython Plugins</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Создание плагина</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Создание плагина<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<section id="id2">
+<h2>Начало работы<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p>Каждое пользовательское расширение представляется
+на диске в виде отдельной папки, структура которой описана ниже:</p>
+<img alt="_images/qs_1.png" class="align-center" src="_images/qs_1.png" />
+<section id="lang-id-1049">
+<h3>Папка LANG_ID (папка 1049)<a class="headerlink" href="#lang-id-1049" title="Permalink to this heading"></a></h3>
+<p>LANG_ID: необязательная папка
+(используется, если в настройках SCAD++ выбран соответствующий язык,
+например 1049 – русский, 1033 – английский и т.д.,
+в соответствии с таблицей Microsoft Locale ID Values). Содержит:</p>
+<ul class="simple">
+<li><p>Файл Plugin.cfg: необязательный файл, зависимое от языка описание пользовательского расширения.</p></li>
+</ul>
+</section>
+<section id="python">
+<h3>Папка Python(Не обязательная)<a class="headerlink" href="#python" title="Permalink to this heading"></a></h3>
+<p>Содержит основные скрипты IronPython:</p>
+<ul class="simple">
+<li><p>PyPlugin.py(Обязательный) - Основной файл плагина. Содержащий основную логику выполнения плагина и точки входа плагина.</p></li>
+</ul>
+<p>В папке может содержаться любое количество вспомогательных модулей .py вызываемых из основного файла</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Необязательно создавать папку Python, папка служит лишь для структурирования файлов.
+Возможно размещение файлов .py в корневой папке плагина, так же имя основного файла выбирается пользователем,
+это регулируется прописыванием путей к основному файлу .py в <code class="docutils literal notranslate"><span class="pre">Plugin.js</span></code></p>
+</div>
+</section>
+<section id="plugin-cfg">
+<h3>Файл Plugin.cfg:<a class="headerlink" href="#plugin-cfg" title="Permalink to this heading"></a></h3>
+<p>Обязательный файл, независимое от языка описание пользовательского расширения и путь к иконки плагина</p>
+</section>
+<section id="plugin-js">
+<h3>Файл Plugin.js:<a class="headerlink" href="#plugin-js" title="Permalink to this heading"></a></h3>
+<p>Обязательный файл, является точкой входа в <code class="docutils literal notranslate"><span class="pre">PyPlugin.py</span></code> для выполнения основной логики плагина</p>
+</section>
+<section id="parameters-cfg">
+<h3>Parameters.cfg:<a class="headerlink" href="#parameters-cfg" title="Permalink to this heading"></a></h3>
+<p>Необязательный, служебный файл. Появляется при записи параметров в файл</p>
+</section>
+</section>
+<section id="id3">
+<h2>Функции и логика в Plugin.js<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<p>Является точкой входа <code class="docutils literal notranslate"><span class="pre">PyPlugin.py</span></code> для выполнения основной логики плагина. <code class="docutils literal notranslate"><span class="pre">Plugin.js</span></code>
+вызывает объект  IronPython <code class="docutils literal notranslate"><span class="pre">ScadPython</span></code> (Описание объекта смотри ниже) для работы с файлами .py.
+Так же в нем содержаться 2 точки входа  <code class="docutils literal notranslate"><span class="pre">Plugin_ActivateUI(engine)</span></code> и <code class="docutils literal notranslate"><span class="pre">Plugin_Execute(engine)</span></code>,
+каждая из этих функции вызывает аналогичную функцию в основном файле .py <code class="docutils literal notranslate"><span class="pre">run_activateUI(pyScad)</span></code> и <code class="docutils literal notranslate"><span class="pre">run_execute(pyScad)</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>В случае отсутствия передаваемых параметров от пользователя, функция <code class="docutils literal notranslate"><span class="pre">Plugin_ActivateUI</span></code> и соответствующая ей функция
+<code class="docutils literal notranslate"><span class="pre">run_activateUI()</span></code> в .py файле могут отсутствовать.</p>
+</div>
+<section id="id4">
+<h3>Реализация Plugin.js<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">//Вызов IronPython для работы с файлами .py</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">scad_c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&quot;ScadPython&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">Plugin_ActivateUI</span><span class="p">(</span><span class="nx">engine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//путь к основному скрипту .py</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//(C:\ProgramData\SCAD Soft\Plugins\PreProcessor\MyIPyPlugin\Python\PyPlugin.py)</span><span class="w"></span>
+<span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">engine</span><span class="p">.</span><span class="nx">GetPluginRootDirectory</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;Python\\PyPlugin.py&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//Вызов функции run_activateUI() в PyPlugin.py</span><span class="w"></span>
+<span class="w">      </span><span class="nx">scad_c</span><span class="p">.</span><span class="nx">RunActivateUI</span><span class="p">(</span><span class="nx">engine</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//Переход к функции Plugin_Execute</span><span class="w"></span>
+<span class="w">      </span><span class="nx">engine</span><span class="p">.</span><span class="nx">Execute</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">   </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nx">engine</span><span class="p">.</span><span class="nx">Cancel</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">Plugin_Execute</span><span class="p">(</span><span class="nx">engine</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">//путь к основному скрипту .py</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//(C:\ProgramData\SCAD Soft\Plugins\PreProcessor\MyIPyPlugin\Python\PyPlugin.py)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">engine</span><span class="p">.</span><span class="nx">GetPluginRootDirectory</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;Python\\PyPlugin.py&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//Вызов функции run_execute() в PyPlugin.py</span><span class="w"></span>
+<span class="w">  </span><span class="nx">scad_c</span><span class="p">.</span><span class="nx">RunExecute</span><span class="p">(</span><span class="nx">engine</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nx">engine</span><span class="p">.</span><span class="nx">Cancel</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="pyplugin-py">
+<h2>Функции и логика в PyPlugin.py<a class="headerlink" href="#pyplugin-py" title="Permalink to this heading"></a></h2>
+<p>Основной скрипт выполнения логики плагина. Содержать функции:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">run_activateUI(pyScad)</span></code> - (если она существует) сосредоточено все интерактивное взаимодействие пользовательского расширения и пользователя программы.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">run_execute(pyScad)</span></code>    - функция выполнения основной логики плагина</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<ol class="arabic simple">
+<li><p>Имя основного файла <code class="docutils literal notranslate"><span class="pre">&lt;MyNamePyPlugin&gt;.py</span></code> может быть заданно пользователем
+т.к. передача основного файла .py проходит по заданному пути в <code class="docutils literal notranslate"><span class="pre">Plugin.js</span></code></p></li>
+<li><p>В случае отсутствия передаваемых параметров от пользователя, функция <code class="docutils literal notranslate"><span class="pre">run_activateUI</span></code> в .py файле может отсутствовать.</p></li>
+</ol>
+</div>
+<section id="id5">
+<h3>Реализация PyPlugin.py<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Установка необходимых путей для поиска модулей и файлов</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1">#Путь к директории Plugins (по стандарту C:\ProgramData\SCAD Soft\Plugins)</span>
+<span class="n">pluginDirPath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span> <span class="vm">__file__</span> <span class="p">),</span> <span class="s1">&#39;../../..&#39;</span><span class="p">))</span>
+
+<span class="c1">#Путь к основной библиотеке - scad_py</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pluginDirPath</span><span class="p">)</span>
+<span class="c1">#Дополнительные модули</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pluginDirPath</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">PreProcessor</span><span class="se">\\</span><span class="s2">MyIPyPlugin</span><span class="se">\\</span><span class="s2">Python&quot;</span><span class="p">)</span>
+
+<span class="c1">#Возможен импорт сторонних/собственных библиотек в виде .dll</span>
+<span class="c1">#Импорт библиотек .dll</span>
+<span class="kn">import</span> <span class="nn">clr</span>
+<span class="c1">#Импорт созданной библиотеки</span>
+<span class="n">clr</span><span class="o">.</span><span class="n">AddReferenceToFileAndPath</span><span class="p">(</span><span class="s2">&quot;MySomeLib.dll&quot;</span><span class="p">)</span>
+<span class="c1">#Импорт класса содержащийся в библиотеке</span>
+<span class="kn">from</span> <span class="nn">MySomeLib</span> <span class="kn">import</span> <span class="n">MyClass</span>
+
+<span class="c1">#Импорт библиотеки scad_py</span>
+<span class="kn">from</span> <span class="nn">pyscad_lib.pyscad</span> <span class="kn">import</span> <span class="n">Engine</span>
+
+<span class="c1">#Импорт вспомогательных библиотек</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="k">def</span> <span class="nf">run_activateUI</span><span class="p">(</span><span class="n">pyScad</span><span class="p">):</span>
+
+    <span class="n">engineScad</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">(</span><span class="n">pyScad</span><span class="p">)</span>
+
+    <span class="c1">#TO DO</span>
+    <span class="c1">#Логика работы с пользовательским интерфейсом</span>
+    <span class="c1">#...</span>
+
+
+<span class="k">def</span> <span class="nf">run_execute</span><span class="p">(</span><span class="n">pyScad</span><span class="p">):</span>
+
+    <span class="n">engineScad</span> <span class="o">=</span> <span class="n">Engine</span><span class="p">(</span><span class="n">pyScad</span><span class="p">)</span>
+    <span class="n">editor</span> <span class="o">=</span> <span class="n">engineScad</span><span class="o">.</span><span class="n">get_editor</span><span class="p">()</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">engineScad</span><span class="o">.</span><span class="n">get_model</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1">#TO DO</span>
+        <span class="c1">#Основная логика плагина</span>
+        <span class="c1">#...</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">raise</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="ironpython-scadpython">
+<h2>Объект IronPython - ScadPython<a class="headerlink" href="#ironpython-scadpython" title="Permalink to this heading"></a></h2>
+<p>Объект IronPython предназначен для вызова файлов .py, объект вызывается из <code class="docutils literal notranslate"><span class="pre">Plugin.js</span></code>.
+Содержит две функции:</p>
+<section id="scadpython-runactivateui-engine-path-silencemod-true">
+<h3>1. ScadPython.RunActivateUI(engine, path, silenceMod = true)<a class="headerlink" href="#scadpython-runactivateui-engine-path-silencemod-true" title="Permalink to this heading"></a></h3>
+<p>Вызывает у файла по пути <code class="docutils literal notranslate"><span class="pre">path</span></code> функцию <code class="docutils literal notranslate"><span class="pre">run_activateUI(pyScad)</span></code>.
+Аргументы:</p>
+<ul class="simple">
+<li><p><strong>engine</strong> - основной объект SCAD++.</p></li>
+<li><p><strong>path</strong>  - полный путь к основному файлу .py (в данном случае к <code class="docutils literal notranslate"><span class="pre">PyPlugin.py</span></code>)</p></li>
+<li><p><strong>silenceMod</strong> - маркер включения и выключение тихого режима. По умолчанию включен.
+Выключение тихого режима вызывает сообщение о начале и окончании работы скрипта.</p></li>
+</ul>
+</section>
+<section id="scadpython-runexecute-engine-path-silencemod-true">
+<h3>2. ScadPython.RunExecute(engine, path, silenceMod = true)<a class="headerlink" href="#scadpython-runexecute-engine-path-silencemod-true" title="Permalink to this heading"></a></h3>
+<p>Вызывает у файла по пути <code class="docutils literal notranslate"><span class="pre">path</span></code> функцию <code class="docutils literal notranslate"><span class="pre">run_execute(pyScad)</span></code>.
+Аргументы:</p>
+<ul class="simple">
+<li><p><strong>engine</strong> - основной объект SCAD++.</p></li>
+<li><p><strong>path</strong>  - полный путь к основному файлу .py (в данном случае к <code class="docutils literal notranslate"><span class="pre">PyPlugin.py</span></code>)</p></li>
+<li><p><strong>silenceMod</strong> - маркер включения и выключение тихого режима. По умолчанию включен.
+Выключение тихого режима вызывает сообщение о начале и окончании работы скрипта.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="pyscad_lib.view.html" class="btn btn-neutral float-left" title="pyscad_lib.view package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ScadSoft.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

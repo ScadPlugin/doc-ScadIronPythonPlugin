@@ -1,0 +1,2819 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyscad_lib package &mdash; документация Scad IronPython Plugins 1.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="pyscad_lib.editor package" href="pyscad_lib.editor.html" />
+    <link rel="prev" title="pyscad_lib" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Scad IronPython Plugins
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Документация библиотеки:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Быстрый старт</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyscad_lib</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pyscad_lib package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.editor.html">pyscad_lib.editor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.model.html">pyscad_lib.model package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.result.html">pyscad_lib.result package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.setting.html">pyscad_lib.setting package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.view.html">pyscad_lib.view package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-pyscad_lib.pyscad">pyscad_lib.pyscad module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-pyscad_lib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="createplugin.html">Создание плагина</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="additionally.html">Дополнительно</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Scad IronPython Plugins</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">pyscad_lib</a> &raquo;</li>
+      <li>pyscad_lib package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pyscad-lib-package">
+<h1>pyscad_lib package<a class="headerlink" href="#pyscad-lib-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyscad_lib.editor.html">pyscad_lib.editor package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.editor.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.editor.html#module-pyscad_lib.editor.editor_models">pyscad_lib.editor.editor_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.editor.html#module-pyscad_lib.editor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyscad_lib.model.html">pyscad_lib.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.model.html#module-pyscad_lib.model.model_models">pyscad_lib.model.model_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.model.html#module-pyscad_lib.model">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyscad_lib.result.html">pyscad_lib.result package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.result.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.result.html#module-pyscad_lib.result.result_models">pyscad_lib.result.result_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.result.html#module-pyscad_lib.result">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyscad_lib.setting.html">pyscad_lib.setting package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.setting.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.setting.html#module-pyscad_lib.setting.setting_models">pyscad_lib.setting.setting_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.setting.html#module-pyscad_lib.setting">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyscad_lib.view.html">pyscad_lib.view package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.view.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.view.html#module-pyscad_lib.view.view_models">pyscad_lib.view.view_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyscad_lib.view.html#module-pyscad_lib.view">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pyscad_lib.pyscad">
+<span id="pyscad-lib-pyscad-module"></span><h2>pyscad_lib.pyscad module<a class="headerlink" href="#module-pyscad_lib.pyscad" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Debug">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">Debug</span></span><a class="headerlink" href="#pyscad_lib.pyscad.Debug" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для записи данных в файл</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Debug.ToJsonFile">
+<span class="sig-name descname"><span class="pre">ToJsonFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Debug.ToJsonFile" title="Ссылка на это определение"></a></dt>
+<dd><p>Функция записи объекта в .json.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pyScad</strong> (<em>scad</em>) – Объект SCAD</p></li>
+<li><p><strong>data</strong> (<em>object</em>) – Объект для записи</p></li>
+<li><p><strong>fileName</strong> (<em>str</em><em>, </em><em>optional</em>) – Полное имя файла.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">Editor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scedit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edit_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SCAD Editor</p>
+<div class="admonition warning">
+<p class="admonition-title">Предупреждение</p>
+<p>Для всех функций класса, где в параметрах требуется передавать 
+список, необходимо использовать кортежи (tuple).</p>
+<p>Пример №1 - Передачи списка в параметр функции:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">beam_num</span> <span class="o">=</span> <span class="n">editor</span><span class="o">.</span><span class="n">elem_add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">list_node</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">editor</span><span class="o">.</span><span class="n">elem_update</span><span class="p">(</span><span class="n">elem_num</span><span class="p">,</span> <span class="n">list_node</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Пример №2 - Передачи списка с 1 элементом:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#кортеж c 1 элементом</span>
+<span class="n">list_elem_num</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,)</span> 
+<span class="n">editor</span><span class="o">.</span><span class="n">group_elem_create</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">list_elem_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.arm_elem_plate_add">
+<span class="sig-name descname"><span class="pre">arm_elem_plate_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">armElemPlate</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.arm_elem_plate_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую группу заданного армирования пластин.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Имя</p></li>
+<li><p><strong>list_num</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>armElemPlate</strong> (<a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.ArmElemPlate" title="pyscad_lib.editor.editor_models.ArmElemPlate"><em>ArmElemPlate</em></a>) – Объект заданного армирования плиты</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.arm_elem_plate_delete">
+<span class="sig-name descname"><span class="pre">arm_elem_plate_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_arm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.arm_elem_plate_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление заданного армирования для плит</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_arm</strong> (<em>uint</em>) – Номер заданного армирования плиты</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.arm_elem_rod_add">
+<span class="sig-name descname"><span class="pre">arm_elem_rod_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.arm_elem_rod_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новый тип заданного армирования стержней.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Имя</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.arm_elem_rod_part_add">
+<span class="sig-name descname"><span class="pre">arm_elem_rod_part_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_armElem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">armRodPart</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.arm_elem_rod_part_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новый участок армирования, для 
+типа заданного армирования стержней с номером NumArmElemRod.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_armElem</strong> (<em>uint</em>) – Номер типа заданного армирования стержней.</p></li>
+<li><p><strong>armRodPart</strong> (<a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.ArmRodPart" title="pyscad_lib.editor.editor_models.ArmRodPart"><em>ArmRodPart</em></a>) – Класс заданного армирования</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.arm_elem_rod_part_delete">
+<span class="sig-name descname"><span class="pre">arm_elem_rod_part_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_arm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.arm_elem_rod_part_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление заданного армирования</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_arm</strong> (<em>uint</em>) – Номер заданного армирования</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.bed_add">
+<span class="sig-name descname"><span class="pre">bed_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.bed_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новый тип упругого основания.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sc_type</strong> (<em>uint</em>) – Тип упругого основания. 73 – изотропное, 79 – ортотропное, 65 – анизотропное.</p></li>
+<li><p><strong>group_elem</strong> (<em>uint</em>) – Определение типа элемента.1 – стержни, 2 – пластины.</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Список данных для задания коэф. постели на элементы (пластины/стержни)</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.bed_compress">
+<span class="sig-name descname"><span class="pre">bed_compress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.bed_compress" title="Ссылка на это определение"></a></dt>
+<dd><p>Сжатие коэффициентов постели.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.bed_delete">
+<span class="sig-name descname"><span class="pre">bed_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bed_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.bed_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет тип упругого основания.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>bed_num</strong> (<em>uint</em>) – Номер типа упругого основания.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.block_create">
+<span class="sig-name descname"><span class="pre">block_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.block_create" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет блок (Форум).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Имя блока</p></li>
+<li><p><strong>color</strong> (<em>uint</em>) – Десятеричный код цвета</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер добавленного блока.</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>uint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.block_delete">
+<span class="sig-name descname"><span class="pre">block_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.block_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление блока</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>block_num</strong> (<em>uint</em>) – Номер блока</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.combination_add">
+<span class="sig-name descname"><span class="pre">combination_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.combination_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую комбинацию загружений.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Коэффициенты загружений и предыдущих комбинаций.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.combination_clear_all">
+<span class="sig-name descname"><span class="pre">combination_clear_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.combination_clear_all" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет все комбинации загружений.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.concrete_elem_add">
+<span class="sig-name descname"><span class="pre">concrete_elem_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concreteElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.concrete_elem_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую группу конструктивных железобетонных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Название группы</p></li>
+<li><p><strong>list_num</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>concreteElem</strong> (<a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.ConcreteElem" title="pyscad_lib.editor.editor_models.ConcreteElem"><em>ConcreteElem</em></a>) – Объект группы ж.б. элемента</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.concrete_elem_clear_all">
+<span class="sig-name descname"><span class="pre">concrete_elem_clear_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.concrete_elem_clear_all" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление всех групп ж.б. элементов</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.concrete_elem_delete">
+<span class="sig-name descname"><span class="pre">concrete_elem_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_concrete</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.concrete_elem_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление группы ж.б. элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_concrete</strong> (<em>uint</em>) – Номер группы</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.concrete_elem_update">
+<span class="sig-name descname"><span class="pre">concrete_elem_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_concrete</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concreteElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.concrete_elem_update" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую группу конструктивных железобетонных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_concrete</strong> (<em>uint</em>) – Номер группы</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – Название группы</p></li>
+<li><p><strong>list_num</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>concreteElem</strong> (<a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.ConcreteElem" title="pyscad_lib.editor.editor_models.ConcreteElem"><em>ConcreteElem</em></a>) – Объект группы ж.б. элемента</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.dof_union_add">
+<span class="sig-name descname"><span class="pre">dof_union_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.dof_union_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет группу объединений перемещений.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Имя группы</p></li>
+<li><p><strong>mask</strong> (<em>uint</em>) – Битовая маска направлений объединения перемещений.</p></li>
+<li><p><strong>list_node</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров узлов</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер добавленной группы.</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>uint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.dof_union_delete">
+<span class="sig-name descname"><span class="pre">dof_union_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dof_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.dof_union_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет группу объединений перемещений.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>dof_num</strong> (<em>uint</em>) – Номер группы объединений перемещений.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.elem_add">
+<span class="sig-name descname"><span class="pre">elem_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.elem_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Создание элементов в заданном количестве</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityElem</strong> (<em>uint</em>) – Количество добавляемых элементов</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер первого из добавленных элементов.</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.elem_create">
+<span class="sig-name descname"><span class="pre">elem_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_elem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_insert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sys_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sys_coord_effors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.elem_create" title="Ссылка на это определение"></a></dt>
+<dd><p>Создание элемента, объединяет в себе 2 функции ElemAdd, ElemUpdate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>list_node</strong> (<em>[</em><a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.Node" title="pyscad_lib.editor.editor_models.Node"><em>Node</em></a><em>]</em>) – Массив номеров узлов элемента</p></li>
+<li><p><strong>type_elem</strong> (<em>int</em><em>, </em><em>optional</em>) – Номер в соответствии с библиотекой типов КЭ SCAD++, defaults to 5</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя элемента, defaults to «»</p></li>
+<li><p><strong>num_insert</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер типа жестких вставок , defaults to None</p></li>
+<li><p><strong>num_sys_coord</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер системы координат элементов , defaults to None</p></li>
+<li><p><strong>num_sys_coord_effors</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер системы координат элементов для вычисления напряжений в пластинах и объемных элементах, defaults to None</p></li>
+<li><p><strong>num_bed</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер типа упругого основания, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Созданный элемент</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.Elem" title="pyscad_lib.editor.editor_models.Elem">Elem</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.elem_delete">
+<span class="sig-name descname"><span class="pre">elem_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elem_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_delete_node</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.elem_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elem_num</strong> (<em>uint</em>) – Номер элемента</p></li>
+<li><p><strong>b_delete_node</strong> (<em>bool</em><em>, </em><em>optional</em>) – Eсли true, то удаляются все узлы элемента, при условии, что они не принадлежат другим, неудаленным, элементам, defaults to False</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.elem_un_delete">
+<span class="sig-name descname"><span class="pre">elem_un_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elem_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.elem_un_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Восстанавливает ранее удаленный элемент.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>elem_num</strong> (<em>uint</em>) – Номер элемента</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.elem_update">
+<span class="sig-name descname"><span class="pre">elem_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemNum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_elem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_insert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sys_coord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sys_coord_effors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.elem_update" title="Ссылка на это определение"></a></dt>
+<dd><p>Обновление элементов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elemNum</strong> (<em>uint</em>) – Номер элемента</p></li>
+<li><p><strong>list_node</strong> (<em>uint</em>) – Список номеров узлов</p></li>
+<li><p><strong>type_elem</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер типа КЭ, defaults to 5</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя элемента, defaults to «»</p></li>
+<li><p><strong>num_insert</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер типа жестких вставок, defaults to 0</p></li>
+<li><p><strong>num_sys_coord</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер системы координат элементов, defaults to 0</p></li>
+<li><p><strong>num_sys_coord_effors</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер системы координат элементов для вычисления напряжений в пластинах и объемных элементах, defaults to 0</p></li>
+<li><p><strong>num_bed</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер типа упругого основания, defaults to 0</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.group_elem_create">
+<span class="sig-name descname"><span class="pre">group_elem_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.group_elem_create" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет 1 группу элементов (подразумевается группа общего назначения).
+Объединяет в себе 2 функции GroupElemAdd, GroupElemUpdate
+:param text: Имя группы
+:type text: str
+:param list_elem_num: список номеров элементов
+:type list_elem_num: tuple(uint)
+:return: Номер добавленной группы элементов
+:rtype: uint</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.group_elem_delete">
+<span class="sig-name descname"><span class="pre">group_elem_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_group_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.group_elem_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет группу элементов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_group_elem</strong> (<em>uint</em>) – Номер группы</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.group_node_create">
+<span class="sig-name descname"><span class="pre">group_node_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.group_node_create" title="Ссылка на это определение"></a></dt>
+<dd><p>Создание группы узлов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Имя группы</p></li>
+<li><p><strong>list_node_num</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров узлов</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер созданной группы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>uint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.group_node_delete">
+<span class="sig-name descname"><span class="pre">group_node_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_group_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.group_node_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление группы узлов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_group_node</strong> (<em>uint</em>) – Номер группы</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.insert_add">
+<span class="sig-name descname"><span class="pre">insert_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.insert_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новый тип жестких вставок.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>group_elem</strong> (<em>uint</em>) – Принадлежность к группе элементов. 1 – стержни, 2 – пластины.</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Список данных длин жестких вставок. 
+- Для стерженей:(X1, Y1, Z1, X2, Y2, Z2), где X1, Y1, Z1 – смещения в первом узле, X2, Y2, Z2 – смещения во втором узле;
+- Для пластин: (ΔZ,) - смещение срединной плоскости</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+<li><p><strong>sc_type</strong> (<em>int</em><em>, </em><em>optional</em>) – Тип жесткой вставки. 0 – в локальной системе координат элемента, 
+3 – в глобальной системе координат., defaults to 3</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер типа жестких вставок.</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>uint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.insert_delete">
+<span class="sig-name descname"><span class="pre">insert_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">insert_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.insert_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление жестких вставок</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>insert_num</strong> (<em>uint</em>) – Номер жесткой вставки</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.joint_delete">
+<span class="sig-name descname"><span class="pre">joint_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elem_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.joint_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет информацию о шарнирах в узле элемента.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elem_num</strong> (<em>_type_</em>) – Номер элемента.</p></li>
+<li><p><strong>num_node</strong> (<em>_type_</em>) – Номер узла в элементе (1 или 2)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.joint_set">
+<span class="sig-name descname"><span class="pre">joint_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elem_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.joint_set" title="Ссылка на это определение"></a></dt>
+<dd><p>Устанавливает информацию о шарнирах в узле элемента.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elem_num</strong> (<em>uint</em>) – Номер элемента.</p></li>
+<li><p><strong>num_node</strong> (<em>uint</em>) – Номер узла в элементе (1 или 2)</p></li>
+<li><p><strong>mask</strong> (<em>uint</em>) – Маска шарнира.</p></li>
+<li><p><strong>place</strong> (<em>uint</em><em>, </em><em>optional</em>) – Положение шарнира (1 – в узле; 0 – у перехода к гибкой части), defaults to 1</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>, </em><em>optional</em>) – 6-ть чисел с упругими характеристиками шарниров по соответствующим направлениям, defaults to (0, 0, 0, 0, 0, 0)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_add">
+<span class="sig-name descname"><span class="pre">loading_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantity_load</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет заданое количество загружений</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantity_load</strong> (<em>uint</em>) – Количество добавляемых загружений</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер первого из добавленных загружений.</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>uint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_clear">
+<span class="sig-name descname"><span class="pre">loading_clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_clear" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление всех характеристик и нагрузок загружения.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_clear_all">
+<span class="sig-name descname"><span class="pre">loading_clear_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_clear_all" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление всех загружений</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_force_elem_add">
+<span class="sig-name descname"><span class="pre">loading_force_elem_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Qw</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Qn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_force_elem_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавление нагрузки на элемент</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения.</p></li>
+<li><p><strong>Qw</strong> (<em>uint</em>) – вид нагрузки (см. документ Величины нагрузок главы Язык архивации данных, 
+общей документации).</p></li>
+<li><p><strong>Qn</strong> (<em>uint</em>) – См. Дополнение 1 в документации «Пользовательские расширения», поставляется со SCAD++.</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Список значения нагрузок</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_force_elem_delete">
+<span class="sig-name descname"><span class="pre">loading_force_elem_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_force_elem_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление нагрузок с элементов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_force_node_add">
+<span class="sig-name descname"><span class="pre">loading_force_node_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Qw</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Qn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_force_node_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавление нагрузки на узел</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения.</p></li>
+<li><p><strong>Qw</strong> (<em>uint</em>) – вид нагрузки (см. документ Величины нагрузок главы Язык архивации данных, 
+общей документации).</p></li>
+<li><p><strong>Qn</strong> (<em>uint</em>) – См. Дополнение 1 в документации «Пользовательские расширения», поставляется со SCAD++.</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Список значения нагрузок</p></li>
+<li><p><strong>list_node</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров узлов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_force_node_delete">
+<span class="sig-name descname"><span class="pre">loading_force_node_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_force_node_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление нагрузки с узлов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения.</p></li>
+<li><p><strong>list_node</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров узлов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_set_description">
+<span class="sig-name descname"><span class="pre">loading_set_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_loading</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_set_description" title="Ссылка на это определение"></a></dt>
+<dd><p>Устанавливает характеристики загружения.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_loading</strong> (<em>uint</em>) – Номер загружения</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – <p>характеристики загружения 
+(см. главу Язык архивации данных общей документации).</p>
+<p>nameLoad = «Нагрузка_на_Пластины»; (в имени пробелы надо заменять на _)</p>
+<p>type = 0;</p>
+<p>mode = 5;</p>
+<p>longTime = 0.35;</p>
+<p>reliabilityFactor = 1.1;</p>
+<p>description = «Name=» + nameLoad + » Type=» + type + » Mode=» + mode + » LongTime=» + longTime + » ReliabilityFactor=» + reliabilityFactor</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_set_mass">
+<span class="sig-name descname"><span class="pre">loading_set_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_set_mass" title="Ссылка на это определение"></a></dt>
+<dd><p>Устанавливает преобразование статических загружений в массы.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения.</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – массив коэффициентов для всех статических загружений, нагрузки которых преобразуются в массы</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.loading_set_weight">
+<span class="sig-name descname"><span class="pre">loading_set_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_replace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_insert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.loading_set_weight" title="Ссылка на это определение"></a></dt>
+<dd><p>Задает собственный вес.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>uint</em>) – Номер загружения</p></li>
+<li><p><strong>w</strong> (<em>flout</em>) – Коэффициент учета собственного веса.</p></li>
+<li><p><strong>list_elem</strong> (<em>tupe</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>b_replace</strong> (<em>bool</em><em>, </em><em>optional</em>) – если true, то предварительно удаляются все нагрузки от собственного веса для загружения с номером NumLoading., defaults to True</p></li>
+<li><p><strong>b_insert</strong> (<em>bool</em><em>, </em><em>optional</em>) – если true, то собственный вес назначается, в том числе, на жесткие вставки., defaults to False</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.node_add">
+<span class="sig-name descname"><span class="pre">node_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quantityNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.node_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет заданное колличество узлов в SCAD</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>quantityNode</strong> (<em>uint</em>) – Количество добавляемых узлов.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Номер первого из добавленных узлов.</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.node_create">
+<span class="sig-name descname"><span class="pre">node_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">txt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.node_create" title="Ссылка на это определение"></a></dt>
+<dd><p>Создание узла в SCAD++, объединяет в себе 2 функции NodeAdd, NodeUpdate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) – Координата Х</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Координата У</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – Координата Z</p></li>
+<li><p><strong>txt</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>объект узела</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.Node" title="pyscad_lib.editor.editor_models.Node">Node</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.node_delete">
+<span class="sig-name descname"><span class="pre">node_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.node_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление узла</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numNode</strong> (<em>integer</em>) – Номер узла</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.node_un_delete">
+<span class="sig-name descname"><span class="pre">node_un_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.node_un_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Восстанавливает ранее удаленный узел.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numNode</strong> (<em>integer</em>) – Номер узла</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.node_update">
+<span class="sig-name descname"><span class="pre">node_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeNumber</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">txt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.node_update" title="Ссылка на это определение"></a></dt>
+<dd><p>Обновление узла по координатам</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nodeNumber</strong> (<em>uint</em>) – Номер узла</p></li>
+<li><p><strong>x</strong> (<em>float</em>) – Координата X</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – Координата Y</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – Координата Z</p></li>
+<li><p><strong>txt</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rigid_add">
+<span class="sig-name descname"><span class="pre">rigid_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rigid_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новый тип жесткости</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов с данной жесткостью</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – Полное описание типа жесткости. Код жесткости 14П ГОСТ 8240-97 - «STZ RUSSIAN pu_typ97 6 TMP 1.2e-005»</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rigid_compress">
+<span class="sig-name descname"><span class="pre">rigid_compress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rigid_compress" title="Ссылка на это определение"></a></dt>
+<dd><p>Сжатие жесткостей.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rigid_update">
+<span class="sig-name descname"><span class="pre">rigid_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_rigid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rigid_update" title="Ссылка на это определение"></a></dt>
+<dd><p>Обновление типа жесткости</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_rigid</strong> (<em>uint</em>) – Номер типа жесткости</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов с данной жесткостью</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – Полное описание типа жесткости. Код жесткости 14П ГОСТ 8240-97 - «STZ RUSSIAN pu_typ97 6 TMP 1.2e-005»</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rsu_clear_all">
+<span class="sig-name descname"><span class="pre">rsu_clear_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rsu_clear_all" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление ранее введенных данных о РСУ</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rsu_set">
+<span class="sig-name descname"><span class="pre">rsu_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rsu_set" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавление или удаление строк расчетных сочетаний усилий по умолчанию в 
+соответствии с числом загружений/комбинаций загружений.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rsu_set_ignore_comb">
+<span class="sig-name descname"><span class="pre">rsu_set_ignore_comb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b_ignore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rsu_set_ignore_comb" title="Ссылка на это определение"></a></dt>
+<dd><p>Учет комбинаций загружений в РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>b_ignore</strong> (<em>bool</em>) – если true, то комбинации загружений будут учитываться в РСУ</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.rsu_set_str">
+<span class="sig-name descname"><span class="pre">rsu_set_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_rsuStr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noActive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_union</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_union_flags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_exclusions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_realtions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_load</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode_load</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sign</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crane</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crane_regime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coeff_safety_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">long_time_load_component</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_coeff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.rsu_set_str" title="Ссылка на это определение"></a></dt>
+<dd><p>Редактирование строки РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_rsuStr</strong> (<em>uint</em>) – Номер строки РСУ</p></li>
+<li><p><strong>noActive</strong> (<em>bool</em><em>, </em><em>optional</em>) – Признак активности загружения., defaults to False</p></li>
+<li><p><strong>list_union</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em><em>, </em><em>optional</em>) – Массив номеров загружений и комбинаций действующих одновременно с загружением или комбинацией с номером NumRsuStr., defaults to None</p></li>
+<li><p><strong>list_union_flags</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em><em>, </em><em>optional</em>) – Массив признаков включения загружений и комбинаций действующих одновременно с загружением или комбинацией с
+номером NumRsuStr в комбинацию, defaults to None</p></li>
+<li><p><strong>list_exclusions</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em><em>, </em><em>optional</em>) – Массив номеров загружений и комбинаций взаимоисключаемых с загружением или комбинацией с номером NumRsuStr., defaults to None</p></li>
+<li><p><strong>list_realtions</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em><em>, </em><em>optional</em>) – Массив номеров загружений и комбинаций, без которых загружение 
+или комбинация с номером NumRsuStr не могут быть включены в комбинацию, defaults to None</p></li>
+<li><p><strong>type_load</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер типа загружения, defaults to None</p></li>
+<li><p><strong>mode_load</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер вид загружения., defaults to None</p></li>
+<li><p><strong>sign</strong> (<em>bool</em><em>, </em><em>optional</em>) – Учет знакопеременности, defaults to None</p></li>
+<li><p><strong>crane</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер крана, defaults to None</p></li>
+<li><p><strong>crane_regime</strong> (<em>uint</em><em>, </em><em>optional</em>) – Группа режимов работы крана, значение от 1 до 8, defaults to None</p></li>
+<li><p><strong>coeff_safety_factor</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент надежности по нагрузке., defaults to None</p></li>
+<li><p><strong>long_time_load_component</strong> (<em>flout</em><em>, </em><em>optional</em>) – Доля длительной составляющей., defaults to None</p></li>
+<li><p><strong>list_coeff</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em><em>, </em><em>optional</em>) – Коэффициенты для групп элементов с разными требованиями надежности, defaults to (1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.set_bound">
+<span class="sig-name descname"><span class="pre">set_bound</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_replace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.set_bound" title="Ссылка на это определение"></a></dt>
+<dd><p>Устанавливает связи в узлах.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mask</strong> (<em>uint</em>) – Маска</p></li>
+<li><p><strong>list_node</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров узлов</p></li>
+<li><p><strong>b_replace</strong> (<em>bool</em><em>, </em><em>optional</em>) – если true, то связи в узлах заменяются на новые, если false,
+то новые связи добавляются к уже существующим., defaults to True</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.set_info">
+<span class="sig-name descname"><span class="pre">set_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.set_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Задает информацию о файле проекта
+:param info: Информация о файле проекта
+:type info: Info</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.steel_elem_add">
+<span class="sig-name descname"><span class="pre">steel_elem_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steelElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.steel_elem_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую группу конструктивных стальных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Название группы</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список элементов</p></li>
+<li><p><strong>steelElem</strong> (<a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.SteelElem" title="pyscad_lib.editor.editor_models.SteelElem"><em>SteelElem</em></a>) – Объект группы конструктивных стальных элементов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.steel_elem_clear_all">
+<span class="sig-name descname"><span class="pre">steel_elem_clear_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.steel_elem_clear_all" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет все группы стальных конструкций</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.steel_elem_delete">
+<span class="sig-name descname"><span class="pre">steel_elem_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.steel_elem_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление группы конструктивных стальных элементов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_steel</strong> (<em>uint</em>) – Номер группы</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.steel_elem_update">
+<span class="sig-name descname"><span class="pre">steel_elem_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steelElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.steel_elem_update" title="Ссылка на это определение"></a></dt>
+<dd><p>Обновляет новую группу конструктивных стальных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_steel</strong> (<em>uint</em>) – Номер группы</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – Название группы</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список элементов</p></li>
+<li><p><strong>steelElem</strong> (<a class="reference internal" href="pyscad_lib.editor.html#pyscad_lib.editor.editor_models.SteelElem" title="pyscad_lib.editor.editor_models.SteelElem"><em>SteelElem</em></a>) – Объект группы конструктивных стальных элементов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.system_coord_efforts_add">
+<span class="sig-name descname"><span class="pre">system_coord_efforts_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.system_coord_efforts_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую систему координат элементов для вычисления напряжений в пластинах и объемных элементах.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sc_type</strong> (<em>uint</em>) – Тип системы координат элементов. Возможные значения 16, 17 см. Дополнение 2 в документации «Пользовательские расширения», поставляется со SCAD++</p></li>
+<li><p><strong>group_elem</strong> (<em>uint</em>) – Нормер группы элементов. 2 – пластины, 3 – объемные</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Массив данных. Cм. Дополнение 2 в документации «Пользовательские расширения», поставляется со SCAD++</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.system_coord_efforts_delete">
+<span class="sig-name descname"><span class="pre">system_coord_efforts_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sys_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.system_coord_efforts_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет систему координат элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>sys_num</strong> (<em>uint</em>) – Номер системы координат элементов.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.system_coord_elem_add">
+<span class="sig-name descname"><span class="pre">system_coord_elem_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.system_coord_elem_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавляет новую систему координат элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sc_type</strong> (<em>uint</em>) – Тип системы координат элементов. Cм. Дополнение 2 в документации «Пользовательские расширения», поставляется со SCAD++</p></li>
+<li><p><strong>group_elem</strong> (<em>uint</em>) – Нормер группы элементов. 1- стержни, 2 – пластины, 3 – объемные, 4 – специальные, 5 – осесимметричные.</p></li>
+<li><p><strong>list_data</strong> (<em>tuple</em><em>(</em><em>flout</em><em>)</em>) – Массив данных. Cм. Дополнение 2 в документации «Пользовательские расширения», поставляется со SCAD++</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.system_coord_elem_delete">
+<span class="sig-name descname"><span class="pre">system_coord_elem_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sys_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.system_coord_elem_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет систему координат элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>sys_num</strong> (<em>uint</em>) – Номер системы координат элементов.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.unification_rsu_add">
+<span class="sig-name descname"><span class="pre">unification_rsu_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.unification_rsu_add" title="Ссылка на это определение"></a></dt>
+<dd><p>Добавление группы унификаций РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+<li><p><strong>sc_type</strong> (<em>uint</em>) – Номер типа унификации. 1 – по одному сечению, 2 – по соответствующим сечениям, 3 – с учетом симметрии сечений</p></li>
+<li><p><strong>list_elem</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список номеров элементов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Editor.unification_rsu_delete">
+<span class="sig-name descname"><span class="pre">unification_rsu_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_unRsu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Editor.unification_rsu_delete" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаление группы унификаций РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_unRsu</strong> (<em>uint</em>) – Номер группы</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">Engine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pyscad</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reason</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.cancel" title="Ссылка на это определение"></a></dt>
+<dd><p>Прекращает выполнение расширения.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>reason</strong> (<em>str</em>) – Причина остановки, будет отображена в соответствующем окне в SCAD++.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.execute">
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.execute" title="Ссылка на это определение"></a></dt>
+<dd><p>Вызов допустим только до входа в контекст Plugin_Execute.</p>
+<p>Прекращает цикл ожидания, приводит к вызову Plugin_Execute.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_editor">
+<span class="sig-name descname"><span class="pre">get_editor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_editor" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращаемое значение: Если вызов произведен в контексте вызова Plugin_Execute для 
+режима задания исходных данных, то объект типа Editor, иначе – null</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>Возвращаемое значение: Если вызов произведен в контексте вызова Plugin_Execute для режима задания исходных данных, то объект типа Editor, иначе – null</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Editor</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_model">
+<span class="sig-name descname"><span class="pre">get_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_model" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращаемое значение: объект типа Model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Возвращаемое значение: объект типа Model.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pyscad_lib.pyscad.Model" title="pyscad_lib.pyscad.Model">Model</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_parameter">
+<span class="sig-name descname"><span class="pre">get_parameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paramName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultValue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_parameter" title="Ссылка на это определение"></a></dt>
+<dd><p>Вызов сохраненного парамептра по имени</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paramName</strong> (<em>str</em>) – имя параметра.</p></li>
+<li><p><strong>defaultValue</strong> (<em>float</em>) – Значение параметра по умолчанию</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Если параметр был задан – заданное значение, в противном случае – defaultValue (Если параметр defaultValue не задан, то null).</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_plugin_localized_directory">
+<span class="sig-name descname"><span class="pre">get_plugin_localized_directory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_plugin_localized_directory" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает полный путь к зависимой от языка папке расширения</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>полный путь к зависимой от языка папке расширения, например C:ProgramDataSCAD SoftPluginsPreProcessorPluginNameD9        :rtype: str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_plugin_root_directory">
+<span class="sig-name descname"><span class="pre">get_plugin_root_directory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_plugin_root_directory" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращяет полный путь к папке расширения</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>полный путь к папке расширения, например C:ProgramDataSCAD SoftPluginsPreProcessorPluginName.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_result">
+<span class="sig-name descname"><span class="pre">get_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_result" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращаемое значение: Если вызов произведен в контексте выполнения
+Plugin_Execute для режима анализа результатов, то объект типа Result, иначе – null.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>Возвращаемое значение: Если вызов произведен в контексте выполненияPlugin_Execute для режима анализа результатов, то объект типа Result, иначе – null.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Result</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_setting">
+<span class="sig-name descname"><span class="pre">get_setting</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_setting" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращаемое значение: объект типа Settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Возвращаемое значение: объект типа Settings.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>Settings</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.get_view">
+<span class="sig-name descname"><span class="pre">get_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.get_view" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращаемое значение: объект типа View</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Возвращаемое значение: объект типа View</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p><a class="reference internal" href="#pyscad_lib.pyscad.View" title="pyscad_lib.pyscad.View">View</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.save_permanent_parameters">
+<span class="sig-name descname"><span class="pre">save_permanent_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.save_permanent_parameters" title="Ссылка на это определение"></a></dt>
+<dd><p>Сохраняет на диске параметры, которые были назначены функцией SetParameter, с 
+аргументом paramPermanent равным true</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.set_parameter">
+<span class="sig-name descname"><span class="pre">set_parameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paramName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paramValue</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paramPermanent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.set_parameter" title="Ссылка на это определение"></a></dt>
+<dd><p>Вызов допустим только до входа в контекст Plugin_Execute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paramName</strong> (<em>str</em>) – Имя параметра.</p></li>
+<li><p><strong>paramValue</strong> (<em>float</em>) – значение параметра или null.</p></li>
+<li><p><strong>paramPermanent</strong> (<em>bool</em><em>, </em><em>optional</em>) – если true, то параметр будет сохранен на диске при вызове функции SavePermanentParameters и его значение может быть повторно использовано при следующей активации расширения., defaults to True</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Engine.set_progress">
+<span class="sig-name descname"><span class="pre">set_progress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">progress</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Engine.set_progress" title="Ссылка на это определение"></a></dt>
+<dd><dl class="simple">
+<dt>Передает в SCAD++ информацию о ходе выполнения, влияет на прогресс-индикатор в </dt><dd><p>диалоге Выполнение</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>progress</strong> (<em>int</em>) – количество уже исполненных шагов</p></li>
+<li><p><strong>total</strong> (<em>int</em>) – количество уже исполненных шагов</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scmodel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_arm_elem_plate">
+<span class="sig-name descname"><span class="pre">get_arm_elem_plate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_arm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_arm_elem_plate" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_arm_elem_rod">
+<span class="sig-name descname"><span class="pre">get_arm_elem_rod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_arm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_arm_elem_rod" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация  о типе заданого армирования</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_arm</strong> (<em>int</em>) – Номер заданного армирования</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект заданном армированим стержней</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.ArmElemRodModel" title="pyscad_lib.model.model_models.ArmElemRodModel">ArmElemRodModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_arm_elem_rod_part">
+<span class="sig-name descname"><span class="pre">get_arm_elem_rod_part</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_arm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_arm_part</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_arm_elem_rod_part" title="Ссылка на это определение"></a></dt>
+<dd><p>Инофрмация о участке заданного армирования стержней</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_arm</strong> (<em>int</em>) – Номер типа заданного армирования стержней</p></li>
+<li><p><strong>num_arm_part</strong> (<em>int</em>) – Номер участка армирования.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект участка заданого армирования</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.ArmElemRodPartModel" title="pyscad_lib.model.model_models.ArmElemRodPartModel">ArmElemRodPartModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_bed">
+<span class="sig-name descname"><span class="pre">get_bed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_bed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_bed" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о упругом основании в элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_bed</strong> (<em>int</em>) – Номер типа упругого основания</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект упругого основания</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.BedModel" title="pyscad_lib.model.model_models.BedModel">BedModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_block</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_block" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_bound">
+<span class="sig-name descname"><span class="pre">get_bound</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_bound" title="Ссылка на это определение"></a></dt>
+<dd><p>Инофрмация о связях в узле</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_node</strong> (<em>int</em>) – Номер узла</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Битовая маска</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_combination">
+<span class="sig-name descname"><span class="pre">get_combination</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_comb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_combination" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о комбинациях</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_comb</strong> (<em>int</em>) – Номер комбинации</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект комбинации</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.CombinationModel" title="pyscad_lib.model.model_models.CombinationModel">CombinationModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_concrete_elem">
+<span class="sig-name descname"><span class="pre">get_concrete_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_conc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_concrete_elem" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_dofunion">
+<span class="sig-name descname"><span class="pre">get_dofunion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_dof</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_dofunion" title="Ссылка на это определение"></a></dt>
+<dd><p>Информаци о группе объединений перемещений</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_dof</strong> (<em>int</em>) – Номер группы</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект группы объединений перемещений</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.DOFUnionModel" title="pyscad_lib.model.model_models.DOFUnionModel">DOFUnionModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_elem">
+<span class="sig-name descname"><span class="pre">get_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_elem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Вохращяет заданный элемент</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_elem</strong> (<em>int</em>) – Номер элемента.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект элемента</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.ElemModel" title="pyscad_lib.model.model_models.ElemModel">ElemModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_group_elem">
+<span class="sig-name descname"><span class="pre">get_group_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_grElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_group_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о группах элементов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_grElem</strong> (<em>int</em>) – Номер группы элементов</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект группы элементов</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.GroupElemModel" title="pyscad_lib.model.model_models.GroupElemModel">GroupElemModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_group_node">
+<span class="sig-name descname"><span class="pre">get_group_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_grnode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_group_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о группах узлов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_grnode</strong> (<em>int</em>) – Номер группы узлов</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект группы узлов</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.GroupNodeModel" title="pyscad_lib.model.model_models.GroupNodeModel">GroupNodeModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_info">
+<span class="sig-name descname"><span class="pre">get_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация об объекте</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Информация об объекте</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.InfoModel" title="pyscad_lib.model.model_models.InfoModel">InfoModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_insert">
+<span class="sig-name descname"><span class="pre">get_insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_insert</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_insert" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_joint">
+<span class="sig-name descname"><span class="pre">get_joint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_nodeElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_joint" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о шарнирах в узле элемента.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_elem</strong> (<em>int</em>) – Номер элемента.</p></li>
+<li><p><strong>num_nodeElem</strong> (<em>int</em>) – Номер узла в элементе (1 или 2).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект шарнира в узле элемента</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.JointModel" title="pyscad_lib.model.model_models.JointModel">JointModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_loading">
+<span class="sig-name descname"><span class="pre">get_loading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_loading" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о линейном загружении</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>number</strong> (<em>int</em>) – Номер загружения линейной задачи.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект линейного загружения</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.LoadingModel" title="pyscad_lib.model.model_models.LoadingModel">LoadingModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_loading_force_elem">
+<span class="sig-name descname"><span class="pre">get_loading_force_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_forceElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_loading_force_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о нагрузке в элементах</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>int</em>) – Номер загружения.</p></li>
+<li><p><strong>num_forceElem</strong> (<em>int</em>) – Номер нагрузки на элементы.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект нагрузки в элементах</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.ForceNodeModel" title="pyscad_lib.model.model_models.ForceNodeModel">ForceNodeModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_loading_force_node">
+<span class="sig-name descname"><span class="pre">get_loading_force_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_load</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_forceNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_loading_force_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о нагрузке в узлах</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_load</strong> (<em>int</em>) – Номер загружения.</p></li>
+<li><p><strong>num_forceNode</strong> (<em>int</em>) – Номер нагрузки на узлы.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект нагрузки в узлах</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.ForceNodeModel" title="pyscad_lib.model.model_models.ForceNodeModel">ForceNodeModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_loading_mass">
+<span class="sig-name descname"><span class="pre">get_loading_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_loading_mass" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о преобразовании статических загружений в массы.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>number</strong> (<em>int</em>) – Номер загружения.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект преобразования статических загружений в массы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_node">
+<span class="sig-name descname"><span class="pre">get_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Вохращяет заданный узел</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_node</strong> (<em>uint</em>) – Номер узла</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект узла</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p>_type_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_arm_elem_plate">
+<span class="sig-name descname"><span class="pre">get_quantity_arm_elem_plate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_arm_elem_plate" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество  групп заданного армирования пластин.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество  групп заданного армирования пластин.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_arm_elem_rod">
+<span class="sig-name descname"><span class="pre">get_quantity_arm_elem_rod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_arm_elem_rod" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество типов заданного армирования стержней.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество типов заданного армирования стержней.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_bed">
+<span class="sig-name descname"><span class="pre">get_quantity_bed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_bed" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество типов упругого основания</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество типов упругого основания</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_block">
+<span class="sig-name descname"><span class="pre">get_quantity_block</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_block" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее кол-во блоков в схеме (Форум)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее кол-во блоков в схеме</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_combination">
+<span class="sig-name descname"><span class="pre">get_quantity_combination</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_combination" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество комбинаций загружений.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество комбинаций загружений.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_concrete_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_concrete_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_concrete_elem" title="Ссылка на это определение"></a></dt>
+<dd><dl class="simple">
+<dt>Общее количество групп железобетонных конструктивных </dt><dd><p>элементов.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество групп железобетонных конструктивных 
+элементов.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_dofunion">
+<span class="sig-name descname"><span class="pre">get_quantity_dofunion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_dofunion" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество групп объединений перемещений</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество групп объединений перемещений</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество элементов, включая удаленные</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество элементов, включая удаленные</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_group_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_group_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_group_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количиство групп элементов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количиство групп элементов</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_group_node">
+<span class="sig-name descname"><span class="pre">get_quantity_group_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_group_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количиство групп узлов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количиство групп узлов</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_insert">
+<span class="sig-name descname"><span class="pre">get_quantity_insert</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_insert" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество различных типов жестких вставок</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество различных типов жестких вставок</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_loading">
+<span class="sig-name descname"><span class="pre">get_quantity_loading</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_loading" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество загружений линейной задачи.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество загружений линейной задачи.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_node">
+<span class="sig-name descname"><span class="pre">get_quantity_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество узлов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество узлов, включая удаленные</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_rigid">
+<span class="sig-name descname"><span class="pre">get_quantity_rigid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_rigid" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество типов жесткостей.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество типов жесткостей.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_rsu_str">
+<span class="sig-name descname"><span class="pre">get_quantity_rsu_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_rsu_str" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество строк РСУ.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество строк РСУ.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_steel_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_steel_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_steel_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество групп стальных конструктивных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество групп стальных конструктивных элементов.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_system_coord_efforts">
+<span class="sig-name descname"><span class="pre">get_quantity_system_coord_efforts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_system_coord_efforts" title="Ссылка на это определение"></a></dt>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>общее количество типов систем координат элементов для вычисления напряжений в пластинах и объемных элементах.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_system_coord_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_system_coord_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_system_coord_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество систем координат элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество систем координат элементов.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_quantity_unification_rsu">
+<span class="sig-name descname"><span class="pre">get_quantity_unification_rsu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_quantity_unification_rsu" title="Ссылка на это определение"></a></dt>
+<dd><p>Общее количество групп унификаций РСУ.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Общее количество групп унификаций РСУ.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_rigid">
+<span class="sig-name descname"><span class="pre">get_rigid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_rigid" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о типе жесткости в элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>number</strong> (<em>_type_</em>) – Номер типа жесткости.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект типа жесткости в элементе</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.RigidModel" title="pyscad_lib.model.model_models.RigidModel">RigidModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_rigidIdent">
+<span class="sig-name descname"><span class="pre">get_rigidIdent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_rigid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_ident</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_rigidIdent" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_rsuStr">
+<span class="sig-name descname"><span class="pre">get_rsuStr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_rsu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_rsuStr" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация об РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_rsu</strong> (<em>int</em>) – Номер РСУ</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект РСУ</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.RsuStrModel" title="pyscad_lib.model.model_models.RsuStrModel">RsuStrModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_steel_elem">
+<span class="sig-name descname"><span class="pre">get_steel_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_steel_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о группах стальных элементах</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>num_steel</strong> (<em>int</em>) – Номер группы стальных элементов</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект группы стальных элементов</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.SteelElemModel" title="pyscad_lib.model.model_models.SteelElemModel">SteelElemModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_system_coord_efforts">
+<span class="sig-name descname"><span class="pre">get_system_coord_efforts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_system_coord_efforts" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о типе системы координат элементов для вычисления
+напряжений в пластинах и объемных элементах</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>number</strong> (<em>int</em>) – Номер типа системы координат элементов для
+вычисления напряжений в пластинах и объемных элементах.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект системы координат элементов для
+вычисления напряжений в пластинах и объемных элементах</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.SystemCoordEffortsModel" title="pyscad_lib.model.model_models.SystemCoordEffortsModel">SystemCoordEffortsModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_system_coord_elem">
+<span class="sig-name descname"><span class="pre">get_system_coord_elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_system_coord_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Информация о системе координат элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>number</strong> (<em>int</em>) – Номер системы координат элементов.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект системы координат элемента</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.model.html#pyscad_lib.model.model_models.SystemCoordElemModel" title="pyscad_lib.model.model_models.SystemCoordElemModel">SystemCoordElemModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.get_unification_rsu">
+<span class="sig-name descname"><span class="pre">get_unification_rsu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_unification</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.get_unification_rsu" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Model.rsu_get_ignore_combinations">
+<span class="sig-name descname"><span class="pre">rsu_get_ignore_combinations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Model.rsu_get_ignore_combinations" title="Ссылка на это определение"></a></dt>
+<dd><p>Учет комбдинаций в РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>true - если комбинации не учитываются в РСУ, false - если
+комбинации учитываются в РСУ</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">Result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scresult</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_action_info">
+<span class="sig-name descname"><span class="pre">get_action_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_action_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о типе воздействия</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataType</strong> (<em>int</em>) – Тип результатов в приложении 4 документации JS</p></li>
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о типе воздействий</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ActionInfoResult" title="pyscad_lib.result.result_models.ActionInfoResult">ActionInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_comb_displace">
+<span class="sig-name descname"><span class="pre">get_comb_displace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_comb_displace" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает перемещения от комбинаций загружений (DataType: 12).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект перемещений от комбинаций загружений</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_comb_efforts">
+<span class="sig-name descname"><span class="pre">get_comb_efforts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_comb_efforts" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает напряжения/усилия от комбинаций загружений (DataType: 12).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект напряжений/усилий</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.EffortsResult" title="pyscad_lib.result.result_models.EffortsResult">EffortsResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_comb_reactions">
+<span class="sig-name descname"><span class="pre">get_comb_reactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_comb_reactions" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает реакции в связях от комбинаций загружений (DataType: 36).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект реакций в связях от комбинаций загружений</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_comb_reactions_fragment">
+<span class="sig-name descname"><span class="pre">get_comb_reactions_fragment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_comb_reactions_fragment" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает реакции от фрагмента схемы для комбинаций загружений (DataType: 34).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект реакций от фрагмента схемы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_comb_stabil_mode">
+<span class="sig-name descname"><span class="pre">get_comb_stabil_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_comb_stabil_mode" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает формы потери устойчивости от комбинаций загружений (DataType: 15).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект формы потери устойчивости от комбинаций загружений</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_data_type_info">
+<span class="sig-name descname"><span class="pre">get_data_type_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_data_type_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о кол-ве воздействий по данному типу результатов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>dataType</strong> (<em>int</em>) – Тип результатов в приложении 4 документации JS</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о кол-ве воздействий</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.DataTypeInfoResult" title="pyscad_lib.result.result_models.DataTypeInfoResult">DataTypeInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_displace">
+<span class="sig-name descname"><span class="pre">get_displace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_displace" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает перемещения от отдельных загружений (DataType: 11).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект перемещений от отдельных загружений</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_efforts">
+<span class="sig-name descname"><span class="pre">get_efforts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_efforts" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает Напряжения/усилия от отдельных загружений (DataType: 11).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части</p></li>
+<li><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект напряжений/усилий</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.EffortsResult" title="pyscad_lib.result.result_models.EffortsResult">EffortsResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_fixed_step_info">
+<span class="sig-name descname"><span class="pre">get_fixed_step_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_fixed_step_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о шагах нелинейных расчетов</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataType</strong> (<em>int</em>) – Тип результатов в приложении 4 документации JS</p></li>
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о шагах нелинейных расчетов</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.FixedStepInfoResult" title="pyscad_lib.result.result_models.FixedStepInfoResult">FixedStepInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_info">
+<span class="sig-name descname"><span class="pre">get_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о расчете</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Объект информации о расчете</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.InfoResult" title="pyscad_lib.result.result_models.InfoResult">InfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_mass">
+<span class="sig-name descname"><span class="pre">get_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_mass" title="Ссылка на это определение"></a></dt>
+<dd><p>Сформированные узловые массы для динамического загружения (DataType: 21).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект узловых масс</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_mode">
+<span class="sig-name descname"><span class="pre">get_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_mode" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает формы колебаний (DataType: 13)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект форм колебаний</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rc_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_rc_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rc_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество элементов для которых могли быть вычислено заданное армирование.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество элементов для которых могли быть вычислено заданное армирование.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rcfitplate_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_rcfitplate_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rcfitplate_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество элементов.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rcfitrod_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_rcfitrod_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rcfitrod_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество элементов.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rsd_node">
+<span class="sig-name descname"><span class="pre">get_quantity_rsd_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rsd_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество узлов, для которых могли быть вычислены РСП.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество узлов, для которых могли быть вычислены РСП.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rspunch_node">
+<span class="sig-name descname"><span class="pre">get_quantity_rspunch_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rspunch_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество узлов, для которых могли быть вычислены расчетные сочетания продавливания.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество узлов, для которых могли быть вычислены расчетные сочетания продавливания.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rsr_node">
+<span class="sig-name descname"><span class="pre">get_quantity_rsr_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rsr_node" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество узлов, для которых могли быть вычислены расчетные сочетания реакций в связях.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество узлов, для которых могли быть вычислены расчетные сочетания реакций в связях.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_rsu_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_rsu_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_rsu_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает общее количество элементов, для которых могли быть вычислены РСУ.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получает общее количество элементов, для которых могли быть вычислены РСУ.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_quantity_steel_elem">
+<span class="sig-name descname"><span class="pre">get_quantity_steel_elem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_quantity_steel_elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение общее количество элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Получение общее количество элементов.</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rc_factors">
+<span class="sig-name descname"><span class="pre">get_rc_factors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFactor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rc_factors" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о конкретном факторе экспертизы железобетонного элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p></li>
+<li><p><strong>numFactor</strong> (<em>int</em>) – Номер фактора в элементе</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о конкретном факторе экспертизы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.FactorsInfoDispResult" title="pyscad_lib.result.result_models.FactorsInfoDispResult">FactorsInfoDispResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rc_info">
+<span class="sig-name descname"><span class="pre">get_rc_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rc_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о результатах экспертизы железобетонного элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект результата экспертизы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RCInfoDispResult" title="pyscad_lib.result.result_models.RCInfoDispResult">RCInfoDispResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rcfitplate_info">
+<span class="sig-name descname"><span class="pre">get_rcfitplate_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rcfitplate_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение количества результатов подбора арматуры в пластинчатом элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект результатов подбора арматуры</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RcFitInfoDispResult" title="pyscad_lib.result.result_models.RcFitInfoDispResult">RcFitInfoDispResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rcfitplate_result">
+<span class="sig-name descname"><span class="pre">get_rcfitplate_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rcfitplate_result" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о подобранной арматуре в пластинчатом элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект результатов подбора арматуры</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.PlateResultDisp" title="pyscad_lib.result.result_models.PlateResultDisp">PlateResultDisp</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rcfitrod_info">
+<span class="sig-name descname"><span class="pre">get_rcfitrod_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rcfitrod_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение количества результатов подбора арматуры в стержневом элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект результатов подбора арматуры</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RcFitInfoDispResult" title="pyscad_lib.result.result_models.RcFitInfoDispResult">RcFitInfoDispResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rcfitrod_result">
+<span class="sig-name descname"><span class="pre">get_rcfitrod_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rcfitrod_result" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о подобранной арматуре в стержне</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p></li>
+<li><p><strong>numSec</strong> (<em>int</em>) – Номер сечения элемента</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о подобранной арматуре</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultDisp" title="pyscad_lib.result.result_models.ResultDisp">ResultDisp</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_reactions">
+<span class="sig-name descname"><span class="pre">get_reactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_reactions" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает реакции в связях от отдельных загружений (DataType: 35).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект реакций в связях</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_reactions_fragment">
+<span class="sig-name descname"><span class="pre">get_reactions_fragment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_reactions_fragment" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает реакции от фрагмента схемы для отдельных загружений(DataType: 33).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект реакций от фрагмента схем</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rhs_info">
+<span class="sig-name descname"><span class="pre">get_rhs_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rhs_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о правой части нелинейного загружения</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataType</strong> (<em>int</em>) – Тип результатов в приложении 4 документации JS</p></li>
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части нелинейного воздействия</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о правой части нелинейного загружения</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RHSInfoResult" title="pyscad_lib.result.result_models.RHSInfoResult">RHSInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rsd_info">
+<span class="sig-name descname"><span class="pre">get_rsd_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rsd_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о кол-ве вычесленных строк РСП</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о кол-ве вычесленных строк РСП</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsdInfoResult" title="pyscad_lib.result.result_models.RsdInfoResult">RsdInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rsd_str">
+<span class="sig-name descname"><span class="pre">get_rsd_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numStr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rsd_str" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о вычесленом РСП в узле</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер элемента</p></li>
+<li><p><strong>numStr</strong> (<em>int</em>) – Номер строки РСП</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о вычесленом РСП</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsdStrResult" title="pyscad_lib.result.result_models.RsdStrResult">RsdStrResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rspunch_info">
+<span class="sig-name descname"><span class="pre">get_rspunch_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rspunch_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о кол-ве вычесленных строк РС продавливания</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о кол-ве вычесленных строк РС продавливания</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsPunchInfoResult" title="pyscad_lib.result.result_models.RsPunchInfoResult">RsPunchInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rspunch_str">
+<span class="sig-name descname"><span class="pre">get_rspunch_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numStr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rspunch_str" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о вычесленом РС продавливания в узле</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+<li><p><strong>numStr</strong> (<em>int</em>) – Номер строки РС продавливания</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о вычесленом РС продавливания в узле</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsPunchStrResult" title="pyscad_lib.result.result_models.RsPunchStrResult">RsPunchStrResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rsr_info">
+<span class="sig-name descname"><span class="pre">get_rsr_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rsr_info" title="Ссылка на это определение"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rsr_str">
+<span class="sig-name descname"><span class="pre">get_rsr_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numStr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rsr_str" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о вычесленом РСР в узле</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+<li><p><strong>numStr</strong> (<em>int</em>) – Номер строки РСР</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о вычесленом РСР в узле</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsrStrResult" title="pyscad_lib.result.result_models.RsrStrResult">RsrStrResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rsu_info">
+<span class="sig-name descname"><span class="pre">get_rsu_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rsu_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о кол-ве вычесленных строк РСУ</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о кол-ве вычесленных строк РСУ</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsuInfoResult" title="pyscad_lib.result.result_models.RsuInfoResult">RsuInfoResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_rsu_str">
+<span class="sig-name descname"><span class="pre">get_rsu_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numStr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_rsu_str" title="Ссылка на это определение"></a></dt>
+<dd><p>Получает информацию о вычесленом РСУ в элементе</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p></li>
+<li><p><strong>numStr</strong> (<em>int</em>) – Номер строки РСУ вычесленого в элементе</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о вычесленом РСУ</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.RsuStrResult" title="pyscad_lib.result.result_models.RsuStrResult">RsuStrResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_stabil_mode">
+<span class="sig-name descname"><span class="pre">get_stabil_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numAction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFixedStep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numRHS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numNode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_stabil_mode" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение формы потери устойчивости от отдельных загружений(DataType: 14).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numAction</strong> (<em>int</em>) – Номер воздействия</p></li>
+<li><p><strong>numFixedStep</strong> (<em>int</em>) – Номер шага</p></li>
+<li><p><strong>numRHS</strong> (<em>int</em>) – Номер правой части</p></li>
+<li><p><strong>numNode</strong> (<em>int</em>) – Номер узла</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект формы потери устойчивости</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.ResultData" title="pyscad_lib.result.result_models.ResultData">ResultData</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_steel_factor">
+<span class="sig-name descname"><span class="pre">get_steel_factor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numFactor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_steel_factor" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о конкретном факторе экспертизы стального элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p></li>
+<li><p><strong>numFactor</strong> (<em>int</em>) – Номер фактора в элементе</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект информации о конкретном факторе экспертизы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.FactorsInfoDispResult" title="pyscad_lib.result.result_models.FactorsInfoDispResult">FactorsInfoDispResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Result.get_steel_info">
+<span class="sig-name descname"><span class="pre">get_steel_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numElem</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Result.get_steel_info" title="Ссылка на это определение"></a></dt>
+<dd><p>Получение информации о результатах экспертизы стального элемента</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>numElem</strong> (<em>int</em>) – Номер элемента</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p>Объект результатах экспертизы</p>
+</dd>
+<dt class="field-odd">Тип результата</dt>
+<dd class="field-odd"><p><a class="reference internal" href="pyscad_lib.result.html#pyscad_lib.result.result_models.InfoDispResult" title="pyscad_lib.result.result_models.InfoDispResult">InfoDispResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Setting">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">Setting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scmodel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setting_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Setting" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.Setting.get_unit">
+<span class="sig-name descname"><span class="pre">get_unit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unitName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.Setting.get_unit" title="Ссылка на это определение"></a></dt>
+<dd><p>Актуальные настройки единиц измерения</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>unitName</strong> – Имя идентификатора единиц измерения</p>
+</dd>
+</dl>
+<p>Допустимые имена идентификаторов единиц измерения исходных данных:</p>
+<blockquote>
+<div><p>theLinearSizes,theSectionSizes, theSquares, theVolumes, theAngles, theTemperatures, theMasses, theForces,</p>
+<p>theMoments, thePresures, theUnitWeight, theStress, theDistributedForces,</p>
+<p>theDistributedMoments, theAreaDistributedMoments, theBendingRigid, theTimes, theSpeeds,</p>
+<p>theAccelerations, theFrequencies, theCoefficients, theOther</p>
+</div></blockquote>
+<p>Допустимые имена идентификаторов единиц измерения результатов:</p>
+<blockquote>
+<div><p>theResultLinearDisplacements, theResultAngleDisplacements, theResultStress, theResultForces,</p>
+<p>theResultDistributedForces, theResultMoments, theResultDistributedMoments, theResultEnergy,</p>
+<p>theResultDistributedEnergy, theResultArmSquare</p>
+</div></blockquote>
+<p>Допустимые имена идентификаторов единиц измерения для экспорта:</p>
+<blockquote>
+<div><p>theExportLinear,theExportSectionSizes,theExportForces.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Объект настройки единиц измерений</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p><a class="reference internal" href="pyscad_lib.setting.html#pyscad_lib.setting.setting_models.UnitSettings" title="pyscad_lib.setting.setting_models.UnitSettings">UnitSettings</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.View">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.pyscad.</span></span><span class="sig-name descname"><span class="pre">View</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scmodel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.View" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyscad_lib.pyscad.View.get_selection">
+<span class="sig-name descname"><span class="pre">get_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.pyscad.View.get_selection" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает информацию об объектах, выбранных пользователем, на момент вызова функции</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат</dt>
+<dd class="field-odd"><p>Возвращает информацию об объектах, выбранных пользователем, на момент вызова функции</p>
+</dd>
+<dt class="field-even">Тип результата</dt>
+<dd class="field-even"><p><a class="reference internal" href="pyscad_lib.view.html#pyscad_lib.view.view_models.SelectionView" title="pyscad_lib.view.view_models.SelectionView">SelectionView</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pyscad_lib">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyscad_lib" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="modules.html" class="btn btn-neutral float-left" title="pyscad_lib" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="pyscad_lib.editor.html" class="btn btn-neutral float-right" title="pyscad_lib.editor package" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ScadSoft.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

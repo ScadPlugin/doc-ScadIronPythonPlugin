@@ -1,0 +1,39 @@
+﻿
+SCAD++ IronPython Plugins
+=========================
+Библиотека предназначена для создания пользовательских расширений в SCAD++ на основе `IronPython <https://ironpython.net/>`_
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Документация библиотеки:
+   
+   quickstart
+   modules
+
+
+Скачать
+=======
+
+`ScadIPythonLibSetup <#>`_
+
+Создание своего плагина
+=======================
+.. toctree::
+   :maxdepth: 2
+   
+   createplugin
+ 
+Дополнения
+==========
+.. toctree::
+   :maxdepth: 2
+   
+   additionally
+    
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

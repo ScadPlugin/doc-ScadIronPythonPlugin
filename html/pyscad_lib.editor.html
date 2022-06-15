@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyscad_lib.editor package &mdash; документация Scad IronPython Plugins 1.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="pyscad_lib.model package" href="pyscad_lib.model.html" />
+    <link rel="prev" title="pyscad_lib package" href="pyscad_lib.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Scad IronPython Plugins
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Документация библиотеки:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Быстрый старт</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyscad_lib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pyscad_lib.html">pyscad_lib package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pyscad_lib.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pyscad_lib.editor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.model.html">pyscad_lib.model package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.result.html">pyscad_lib.result package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.setting.html">pyscad_lib.setting package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyscad_lib.view.html">pyscad_lib.view package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyscad_lib.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pyscad_lib.html#module-pyscad_lib.pyscad">pyscad_lib.pyscad module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pyscad_lib.html#module-pyscad_lib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="createplugin.html">Создание плагина</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="additionally.html">Дополнительно</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Scad IronPython Plugins</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">pyscad_lib</a> &raquo;</li>
+          <li><a href="pyscad_lib.html">pyscad_lib package</a> &raquo;</li>
+      <li>pyscad_lib.editor package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pyscad-lib-editor-package">
+<h1>pyscad_lib.editor package<a class="headerlink" href="#pyscad-lib-editor-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-pyscad_lib.editor.editor_models">
+<span id="pyscad-lib-editor-editor-models-module"></span><h2>pyscad_lib.editor.editor_models module<a class="headerlink" href="#module-pyscad_lib.editor.editor_models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.ArmElemPlate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">ArmElemPlate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dS1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepS1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepS2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepS3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS4</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepS4</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dW</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepWx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepWy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">NoUp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">NoDown</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">NoTrans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.ArmElemPlate" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс заданного армирования для плиты</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dS1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр продольной арматуры S1 (в мм)., defaults to 10</p></li>
+<li><p><strong>StepS1</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг продольной арматуры S1., defaults to 200</p></li>
+<li><p><strong>dS2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр продольной арматуры S2 (в мм)., defaults to 10</p></li>
+<li><p><strong>StepS2</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг продольной арматуры S2., defaults to 200</p></li>
+<li><p><strong>dS3</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр продольной арматуры S3 (в мм)., defaults to 10</p></li>
+<li><p><strong>StepS3</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг продольной арматуры S3., defaults to 200</p></li>
+<li><p><strong>dS4</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр продольной арматуры S4 (в мм)., defaults to 10</p></li>
+<li><p><strong>StepS4</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг продольной арматуры S4., defaults to 200</p></li>
+<li><p><strong>dW</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр поперечной арматуры (в мм)., defaults to 10</p></li>
+<li><p><strong>StepWx</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг поперечной арматуры по оси X., defaults to 300</p></li>
+<li><p><strong>StepWy</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг поперечной арматуры по оси Y., defaults to 300</p></li>
+<li><p><strong>NoUp</strong> (<em>bool</em><em>, </em><em>optional</em>) – Верхней арматуры нет., defaults to True</p></li>
+<li><p><strong>NoDown</strong> (<em>bool</em><em>, </em><em>optional</em>) – Нижней арматуры нет., defaults to True</p></li>
+<li><p><strong>NoTrans</strong> (<em>bool</em><em>, </em><em>optional</em>) – Поперечной арматуры нет., defaults to True</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.ArmRodPart">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">ArmRodPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">PartNo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">L_percent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS1L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS1L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS2L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS2L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsS1D2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsS2D2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS1L1_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS1L1_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS2L1_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS2L1_2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsS34</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS3L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS3L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS4L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS4L1_1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsSw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dSw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nSw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepSw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dSw2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nSw2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepSw2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsS1L2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsS2L2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeltaS1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeltaS2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS1L2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS1L2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dS2L2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nS2L2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.ArmRodPart" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс арматуры в заданном армировании стержней</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>PartNo</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер участка., defaults to 1</p></li>
+<li><p><strong>L_percent</strong> (<em>uint</em><em>, </em><em>optional</em>) – Длина участка в процентах от длины стержня, defaults to 100</p></li>
+<li><p><strong>dS1L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Первый диаметр S1 (в мм), defaults to 10</p></li>
+<li><p><strong>nS1L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S1, defaults to 0</p></li>
+<li><p><strong>dS2L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Первый диаметр S2 (в мм), defaults to 10</p></li>
+<li><p><strong>nS2L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S2, defaults to 0</p></li>
+<li><p><strong>IsS1D2</strong> (<em>bool</em><em>, </em><em>optional</em>) – S1 имеет два различных диаметра, defaults to False</p></li>
+<li><p><strong>IsS2D2</strong> (<em>bool</em><em>, </em><em>optional</em>) – S2 имеет два различных диаметра, defaults to False</p></li>
+<li><p><strong>dS1L1_2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Второй диаметр S1 (в мм)., defaults to 10</p></li>
+<li><p><strong>nS1L1_2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S1 второго диаметра, defaults to 0</p></li>
+<li><p><strong>dS2L1_2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Второй диаметр S2 (в мм)., defaults to 10</p></li>
+<li><p><strong>nS2L1_2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S2 второго диаметра, defaults to 0</p></li>
+<li><p><strong>IsS34</strong> (<em>bool</em><em>, </em><em>optional</em>) – Есть арматура S3, S4., defaults to False</p></li>
+<li><p><strong>dS3L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр S3 (в мм), defaults to 10</p></li>
+<li><p><strong>nS3L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S3., defaults to 0</p></li>
+<li><p><strong>dS4L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр S4 (в мм)., defaults to 10</p></li>
+<li><p><strong>nS4L1_1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S4., defaults to 0</p></li>
+<li><p><strong>IsSw</strong> (<em>bool</em><em>, </em><em>optional</em>) – Есть поперечная арматура., defaults to False</p></li>
+<li><p><strong>dSw</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр поперечной арматуры в плоскости Z (в мм)., defaults to 10</p></li>
+<li><p><strong>nSw</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней (срезов) поперечной арматуры в плоскости Z., defaults to 0</p></li>
+<li><p><strong>StepSw</strong> (<em>uint</em><em>, </em><em>optional</em>) – Шаг поперечной арматуры в плоскости Z., defaults to 0</p></li>
+<li><p><strong>dSw2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр поперечной арматуры в плоскости Y (в мм)., defaults to 10</p></li>
+<li><p><strong>nSw2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней (срезов) поперечной арматуры в плоскости Y, defaults to 0</p></li>
+<li><p><strong>StepSw2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Шаг поперечной арматуры в плоскости Y., defaults to 0</p></li>
+<li><p><strong>IsS1L2</strong> (<em>bool</em><em>, </em><em>optional</em>) – S1 имеет два ряда., defaults to False</p></li>
+<li><p><strong>IsS2L2</strong> (<em>bool</em><em>, </em><em>optional</em>) – S2 имеет два ряда., defaults to False</p></li>
+<li><p><strong>DeltaS1</strong> (<em>uint</em><em>, </em><em>optional</em>) – Расстояние между рядами S1., defaults to 0</p></li>
+<li><p><strong>DeltaS2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Расстояние между рядами S2., defaults to 0</p></li>
+<li><p><strong>dS1L2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр S1 второго ряда (в мм)., defaults to 10</p></li>
+<li><p><strong>nS1L2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S1 второго ряда., defaults to 0</p></li>
+<li><p><strong>dS2L2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Диаметр S2 второго ряда (в мм)., defaults to 10</p></li>
+<li><p><strong>nS2L2</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество стержней S2 второго ряда., defaults to 0</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.ConcreteElem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">ConcreteElem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Modul</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CrackResisting</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MinArmatur</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">NbCalc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">2,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EffectiveLength</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FactorEffectiveLength</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(1,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Displacement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SeismFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_GammaN</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_GammaN2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TypeBeton</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ConditionsHardening</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Filler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Stiffener</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ClassBeton</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'B15'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SortBeton</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FactorHardening</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FactorForce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FactorTotal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ClassArmAlong</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'A400'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ClassArmAcross</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'A240'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FactorWorkAlong</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FactorWorkAcross</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MaxDiam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MaxProcent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Category</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ConditionsOperation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RegimeBeton</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Dampness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">YesSeicmRSU</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Stress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsUserArm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DiamRod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(40,</span> <span class="pre">6)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">WidthCrack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.4,</span> <span class="pre">0.3)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsContrElem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsMinArmPercent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Tr2003</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SlaveGroup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Gb_Damadge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Gb_VertPos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Gb_Freezing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_GammaN_A</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_SpecialConcreteCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_SpecialArmCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_SpecialLargeSpanCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectSNIPCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectSNIPLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectSNIPLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementSNIPCheckEx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementExSNIPLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementExSNIPLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectECCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectECLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectECLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Seismic_Compressed_Zone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.85</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_ApplyECMinAcross</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Rod_IgnoreECTorsion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Plate_106</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Plate_SkipAcrossArm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Rod_IncreaseAlongArm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EffType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_Gc_adjust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_AgeDays</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">28</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_Cement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_CreepAgeDays</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_Temp_during_AgeDays</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_Temp_QntDays</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">28</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_TrVlagBetPercent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_SP_Phi_n_LowerBoundTension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SP_Phi_n_LowerBoundTension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_SP_Phi_n_LowerBoundCompression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SP_Phi_n_LowerBoundCompression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_SP_Phi_n_UpperBoundCompression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SP_Phi_n_UpperBoundCompression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_EC_Increase_Seismic_Shear_Combinations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_EC_Normalized_Axial_Seismic_Load</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_SP_Slenderness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SP_Slenderness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.ConcreteElem" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс группы железобетонных конструктивных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Modul</strong> (<em>uint</em>) – <p>Номер модуля</p>
+<p>103 - оболочки, 104 - балки-стенки,</p>
+<p>105 - пластины, 107 - изгибаемые стержни, 108 - сжато-изогнутые(растянутые) стержни</p>
+</p></li>
+<li><p><strong>CrackResisting</strong> (<em>uint</em><em>, </em><em>optional</em>) – Данные по трещиностойкости(0 - нет, 1 – есть), defaults to None</p></li>
+<li><p><strong>MinArmatur</strong> (<em>uint</em><em>, </em><em>optional</em>) – Данные по минимальной арматуре(0 - нет, 1 – есть)., defaults to None</p></li>
+<li><p><strong>NbCalc</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Используется только при расчетах по СП 52-101-03.</p>
+<p>Если это поле равно 1, то для внецентренно сжатых элементов при</p>
+<p>расчете значения продольной силы Nb по п.3.52. Пособия к СП 52-101-2003</p>
+<p>учитывается площадь сечения арматуры, defaults to None</p>
+</p></li>
+<li><p><strong>Range</strong> (<em>tuple</em><em>, </em><em>optional</em>) – <p>Range[4]: расстояния до центра тяжести арматур, Задается в см., defaults to (2,2,0,0)</p>
+<p>Range[0]=a1, Range[1]=a2 для стержней и пластин;</p>
+<p>Range[2]= a3, Range[3]= a4 для пластин.</p>
+</p></li>
+<li><p><strong>EffectiveLength</strong> (<em>tuple</em><em>, </em><em>optional</em>) – EffectiveLength[2]: расчетные длины в плоскостях X1OZ1, X1OY1, defaults to (1,1)</p></li>
+<li><p><strong>FactorEffectiveLength</strong> (<em>tuple</em><em>, </em><em>optional</em>) – FactorEffectiveLength[2]: коэффициенты расчетных длин в плоскостях X1OZ1, X1OY1 , defaults to (1,1)</p></li>
+<li><p><strong>Displacement</strong> (<em>tuple</em><em>, </em><em>optional</em>) – Displacement[2]: случайные эксцентриситеты по осям Z1, Y1., defaults to (0,0)</p></li>
+<li><p><strong>SeismFactor</strong> (<em>tuple</em><em>, </em><em>optional</em>) – SeismFactor[2]: коэффициенты учета сейсмического воздействия, defaults to (0,0)</p></li>
+<li><p><strong>m_GammaN</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент надежности по ответственности (первое предельное состояние), defaults to None</p></li>
+<li><p><strong>m_GammaN2</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент надежности по ответственности (второе предельное состояние), defaults to None</p></li>
+<li><p><strong>TypeBeton</strong> (<em>uint</em><em>, </em><em>optional</em>) – Вид бетона(0 - тяжелый бетон, 1 – мелкозернистый А, 2 - мелкозернистый Б, 3 - мелкозернистый В, 4 – легкий)., defaults to None</p></li>
+<li><p><strong>ConditionsHardening</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Условия твердения твердения, defaults to 1</p>
+<p>При расчетах по СП поле ConditionsHardening следует задавать равным 1.</p>
+<p>При расчетах по СНиП: 1 - Естественное, 2 - В пропарочных камерах, 3 - Автоклавная обработка.</p>
+</p></li>
+<li><p><strong>Filler</strong> (<em>uint</em><em>, </em><em>optional</em>) – Заполнитель легкого бетона, defaults to None</p></li>
+<li><p><strong>Stiffener</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1 - ребро плиты, defaults to None</p></li>
+<li><p><strong>ClassBeton</strong> (<em>str</em><em>, </em><em>optional</em>) – <p>Класс бетона, defaults to «B15»</p>
+<p>»B10», «B15», «B20» и тд.</p>
+</p></li>
+<li><p><strong>SortBeton</strong> (<em>str</em><em>, </em><em>optional</em>) – Марка бетона по средней плотности, defaults to None</p></li>
+<li><p><strong>FactorHardening</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент условий твердения, defaults to None</p></li>
+<li><p><strong>FactorForce</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент учета нагрузок длительного, defaults to None</p></li>
+<li><p><strong>FactorTotal</strong> (<em>flout</em><em>, </em><em>optional</em>) – Результирующий коэффициент условий работы бетона (при расчетах по СНиП), defaults to None</p></li>
+<li><p><strong>ClassArmAlong</strong> (<em>str</em><em>, </em><em>optional</em>) – Класс продольной арматуры, defaults to «A400»</p></li>
+<li><p><strong>ClassArmAcross</strong> (<em>str</em><em>, </em><em>optional</em>) – Класс поперечной арматуры, defaults to «A240»</p></li>
+<li><p><strong>FactorWorkAlong</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент условий работы продольной арматуры, defaults to 1</p></li>
+<li><p><strong>FactorWorkAcross</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент условий работы поперечной арматуры, defaults to 1</p></li>
+<li><p><strong>MaxDiam</strong> (<em>uint</em><em>, </em><em>optional</em>) – Максимальный диаметр углового стержня в миллиметрах (при подборе), defaults to 40</p></li>
+<li><p><strong>MaxProcent</strong> (<em>uint</em><em>, </em><em>optional</em>) – Максимальный процент армирования (при подборе), defaults to 10</p></li>
+<li><p><strong>Category</strong> (<em>uint</em><em>, </em><em>optional</em>) – Категория трещиностойкости (1 - отсутствие трещин или 3 - ограниченная ширина раскрытия трещин), defaults to None</p></li>
+<li><p><strong>ConditionsOperation</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Условия эксплуатации, defaults to None</p>
+<p>При расчетах по СП поле ConditionsOperation следует устанавливать равным 1.</p>
+<p>При расчетах по СНиП: 1 - В помещении, 2 - На открытом воздухе или в грунте, 3 - Грунт. Переменный уровень вод.</p>
+</p></li>
+<li><p><strong>RegimeBeton</strong> (<em>uint</em><em>, </em><em>optional</em>) – Режим влажности бетона, defaults to None</p></li>
+<li><p><strong>Dampness</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Влажность воздуха окружающей среды , defaults to 1</p>
+<p>При расчетах по СНиП поле Dampness следует устанавливать равным 1.</p>
+<p>При расчетах по СП: 1 - 40-75%, 2 - менее 40%, 3 - более 75%.</p>
+</p></li>
+<li><p><strong>YesSeicmRSU</strong> (<em>uint</em><em>, </em><em>optional</em>) – Учитывать РСУ с сейсмикой, учитывать сейсмику для второго предельного состояния , defaults to None</p></li>
+<li><p><strong>Stress</strong> (<em>uint</em><em>, </em><em>optional</em>) – Напряженное состояние(одноосное - 0, косой изгиб - 1), defaults to 1</p></li>
+<li><p><strong>IsUserArm</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1 - учитывать заданное армирование при подбора арматуры в пластинах, defaults to None</p></li>
+<li><p><strong>DiamRod</strong> (<em>tuple</em><em>, </em><em>optional</em>) – <p>DiamRod[2]: при подборе по трещиностойкости —</p>
+<p>диаметры стержней продольной и поперечной арматур (в миллиметрах), defaults to (40, 6)</p>
+</p></li>
+<li><p><strong>WidthCrack</strong> (<em>tuple</em><em>, </em><em>optional</em>) – WidthCrack[2]: максимально допустимая ширина непродолжительного и продолжительного раскрытия трещин (в миллиметрах), defaults to (0.4, 0.3)</p></li>
+<li><p><strong>IsContrElem</strong> (<em>uint</em><em>, </em><em>optional</em>) – Признак конструктивного элемента, defaults to None</p></li>
+<li><p><strong>IsMinArmPercent</strong> (<em>bool</em><em>, </em><em>optional</em>) – Учитывать минимальный процент армирования при подборе, defaults to False</p></li>
+<li><p><strong>Tr2003</strong> (<em>uint</em><em>, </em><em>optional</em>) – При расчетах по СП: требования к ширине раскрытия трещин выбираются, Из условия сохранности арматуры - 0, из условия ограничения проницаемости конструкций - 1, defaults to None</p></li>
+<li><p><strong>SlaveGroup</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1 - дополнительная группа, 0 - основная группа, defaults to None</p></li>
+<li><p><strong>Gb_Damadge</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент учета характера разрушения yb2 (при расчетах по СП), defaults to 1</p></li>
+<li><p><strong>Gb_VertPos</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент учета вертикального положения при бетонировании yb3 (при расчетах по СП), defaults to 1</p></li>
+<li><p><strong>Gb_Freezing</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент учета замораживания/оттаивания и отрицательных температур (yb5 (при расчетах по СП 63.13330.2012) или yb4 (при расчетах по СП 52-101-03)), defaults to 1</p></li>
+<li><p><strong>DisplacementCheck</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementCheck[10]: признаки использования ограничения по прогибам и перемещениям, defaults to (0,0,0,0,0, 0,0,0,0,0)</p></li>
+<li><p><strong>DisplacementLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementLimit_L[10]: ограничения по прогибам и перемещениям в долях длины элемента, defaults to (0,0,0,0,0, 0,0,0,0,0)</p></li>
+<li><p><strong>DisplacementLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementLimit_Abs[10]: абсолютные ограничения по прогибам и перемещениям, defaults to (0,0,0,0,0, 0,0,0,0,0)</p></li>
+<li><p><strong>m_GammaN_A</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент надежности по ответственности (аварийное состояние), defaults to None</p></li>
+<li><p><strong>m_SpecialConcreteCoef</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент условий работы бетона при особых (не сейсмических) воздействиях, defaults to None</p></li>
+<li><p><strong>m_SpecialArmCoef</strong> (<em>float</em><em>, </em><em>optional</em>) – Коэффициент условий работы арматуры при особых (не сейсмических) воздействиях, defaults to 1.1</p></li>
+<li><p><strong>m_SpecialLargeSpanCoef</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент понижающий расчетное сопротивление, defaults to None</p></li>
+<li><p><strong>DeflectSNIPCheck</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectSNIPCheck[6]: признак использования ограничения по прогибу, defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectSNIPLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – <p>DeflectSNIPLimit_L[6]: ограничение по прогибу относительно длины элемента, defaults to (0,0,0, 0,0,0)</p>
+<p>См. таблицу «Для учета ограничений по прогибам и перемещениям следует задавать следующие данные» в</p>
+<p>документацию к Пользовательские расширения поставляемые со SCAD++ )</p>
+</p></li>
+<li><p><strong>DeflectSNIPLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectSNIPLimit_Abs[6]: абсолютное ограничение по прогибу, defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DisplacementSNIPCheckEx</strong> (<em>tuple</em><em>, </em><em>optional</em>) – <p>DisplacementSNIPCheckEx[2]: признак использования ограничения по прогибу, defaults to (0,0)</p>
+<p>См. таблицу «Для учета ограничений по прогибам и перемещениям следует задавать следующие данные» в</p>
+<p>документацию к Пользовательские расширения поставляемые со SCAD++ )</p>
+</p></li>
+<li><p><strong>DisplacementExSNIPLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementExSNIPLimit_L[2]: ограничение по перемещениям относительно длины элемента, defaults to (0,0)</p></li>
+<li><p><strong>DisplacementExSNIPLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementExSNIPLimit_Abs[2]: абсолютное ограничение по перемещениям, defaults to (0,0)</p></li>
+<li><p><strong>DeflectECCheck</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectECCheck[6]: признак использования ограничения по прогибу (EC), defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectECLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectECLimit_L[6]: ограничение по прогибу относительно длины элемента (Eurocode), defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectECLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectECLimit_Abs[6]: абсолютное ограничение по прогибу (Eurocode), defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>Seismic_Compressed_Zone</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент снижения граничной относительной высоты сжатой зоны, defaults to None</p></li>
+<li><p><strong>check_ApplyECMinAcross</strong> (<em>uint</em><em>, </em><em>optional</em>) – Устанавливать минимальную поперечную арматуру(См. п. 6.2.1(4) EN 1992-1-1), defaults to None</p></li>
+<li><p><strong>check_Rod_IgnoreECTorsion</strong> (<em>uint</em><em>, </em><em>optional</em>) – Не учитывать кручение(См. п. 6.3.1(2) EN 1992-1-1), defaults to None</p></li>
+<li><p><strong>check_Plate_106</strong> (<em>uint</em><em>, </em><em>optional</em>) – Использовать формулу (8.106) СП 63.13330, defaults to None</p></li>
+<li><p><strong>check_Plate_SkipAcrossArm</strong> (<em>uint</em><em>, </em><em>optional</em>) – Не учитывать поперечную арматуру при малой интенсивности поперечного армирования, defaults to None</p></li>
+<li><p><strong>check_Rod_IncreaseAlongArm</strong> (<em>uint</em><em>, </em><em>optional</em>) – Увеличивать продольную арматуру при реализации п. 8.1.34 СП 63.13330, defaults to None</p></li>
+<li><p><strong>EffType</strong> (<em>tuple</em><em>, </em><em>optional</em>) – EffType[2]: признак расчетная/коэффициент(1 - длина, 0 - коэффициент;), defaults to (0, 0)</p></li>
+<li><p><strong>EC_Gc_adjust</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент понижающий/повышающий коэффициент условий работы бетона (Eurocode)(Приложение А EN 1992-1-1), defaults to None</p></li>
+<li><p><strong>EC_AgeDays</strong> (<em>uint</em><em>, </em><em>optional</em>) – Возраст бетона в днях, defaults to None</p></li>
+<li><p><strong>EC_Cement</strong> (<em>uint</em><em>, </em><em>optional</em>) – Тип цемента, defaults to None</p></li>
+<li><p><strong>EC_CreepAgeDays</strong> (<em>uint</em><em>, </em><em>optional</em>) – Возраст (дни), defaults to None</p></li>
+<li><p><strong>EC_Temp_during_AgeDays</strong> (<em>flout</em><em>, </em><em>optional</em>) – Разность температур (Eurocode)(EN 1992-1-1 B.10), defaults to None</p></li>
+<li><p><strong>EC_Temp_QntDays</strong> (<em>uint</em><em>, </em><em>optional</em>) – Количество суток, когда температура EC_Temp_during_AgeDays преобладает (Eurocode)(EN 1992-1-1 B.10), defaults to None</p></li>
+<li><p><strong>EC_TrVlagBetPercent</strong> (<em>uint</em><em>, </em><em>optional</em>) – Относительная влажность %, defaults to None</p></li>
+<li><p><strong>check_SP_Phi_n_LowerBoundTension</strong> (<em>flout</em><em>, </em><em>optional</em>) – Учитывать ограничение по нижней границе коэффициента fin при растяжении, defaults to None</p></li>
+<li><p><strong>SP_Phi_n_LowerBoundTension</strong> (<em>flout</em><em>, </em><em>optional</em>) – Нижняя граница коэффициента fin при растяжении, defaults to None</p></li>
+<li><p><strong>check_SP_Phi_n_LowerBoundCompression</strong> (<em>flout</em><em>, </em><em>optional</em>) – Учитывать ограничение по нижней границе коэффициента fin при сжатии, defaults to None</p></li>
+<li><p><strong>SP_Phi_n_LowerBoundCompression</strong> (<em>flout</em><em>, </em><em>optional</em>) – Нижняя граница коэффициента fin при сжатии, defaults to None</p></li>
+<li><p><strong>check_SP_Phi_n_UpperBoundCompression</strong> (<em>flout</em><em>, </em><em>optional</em>) – Учитывать ограничение по верхней границе коэффициента fin при сжатии, defaults to None</p></li>
+<li><p><strong>SP_Phi_n_UpperBoundCompression</strong> (<em>flout</em><em>, </em><em>optional</em>) – Верхняя граница коэффициента fin при сжатии, defaults to None</p></li>
+<li><p><strong>check_EC_Increase_Seismic_Shear_Combinations</strong> (<em>uint</em><em>, </em><em>optional</em>) – Увеличивать расчетные поперечные силы для сейсмических комбинаций (Eurocode)(п. 5.4.2.4 (7) EN 1998), defaults to None</p></li>
+<li><p><strong>check_EC_Normalized_Axial_Seismic_Load</strong> (<em>uint</em><em>, </em><em>optional</em>) – Для сейсмических комбинаций вычислять фактор по нормализованной осевой силе (Eurocode)(п. 5.4.3.4.1(2) EN 1998), defaults to None</p></li>
+<li><p><strong>check_SP_Slenderness</strong> (<em>uint</em><em>, </em><em>optional</em>) – Учитывать ограничение по предельной гибкости, defaults to None</p></li>
+<li><p><strong>SP_Slenderness</strong> (<em>uint</em><em>, </em><em>optional</em>) – Ограничение по предельной гибкости, defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.Elem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">Elem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_elem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_insert</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sys_coord</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sys_coord_effors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.Elem" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Элемент</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>number</strong> (<em>uint</em>) – Номер элемента</p></li>
+<li><p><strong>list_node</strong> (<em>tuple</em><em>(</em><em>uint</em><em>)</em>) – Список узлов</p></li>
+<li><p><strong>type_elem</strong> (<em>uint</em>) – Тип КЭ</p></li>
+<li><p><strong>text</strong> (<em>string</em>) – Имя элемента</p></li>
+<li><p><strong>num_insert</strong> (<em>uint</em>) – Номер типа жестких вставок</p></li>
+<li><p><strong>num_sys_coord</strong> (<em>uint</em>) – Номер системы координат элементов</p></li>
+<li><p><strong>num_sys_coord_effors</strong> (<em>uint</em>) – Номер системы координат элементов для вычисления напряжений в пластинах и объемных элементах</p></li>
+<li><p><strong>num_bed</strong> (<em>uint</em>) – Номер типа упругого основания</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.Info">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">Info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">company</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">executor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.Info" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс информации о файле проекта</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>string</em>) – Имя проекта.</p></li>
+<li><p><strong>company</strong> (<em>string</em>) – Название компании.</p></li>
+<li><p><strong>customer</strong> (<em>string</em>) – Наименование заказчика.</p></li>
+<li><p><strong>object</strong> (<em>string</em>) – Наименование объекта.</p></li>
+<li><p><strong>executor</strong> (<em>string</em>) – Наименование исполнителя.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.Node">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">Node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.Node" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Узел</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>number</strong> (<em>uint</em>) – Номер узла</p></li>
+<li><p><strong>x</strong> (<em>float</em>) – x</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – y</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – z</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя, defaults to «»</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyscad_lib.editor.editor_models.SteelElem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyscad_lib.editor.editor_models.</span></span><span class="sig-name descname"><span class="pre">SteelElem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">IsGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SteelMark</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ContructionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IndexSchema</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bSnip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bNoPlastic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_GammaN</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Koef_usl_rab</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Koef_RasLen_XoZ</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Koef_RasLen_YoZ</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lim_gibkA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">180</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lim_gibkB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepOutPlane_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lim_gibkA_Angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lim_gibkB_Angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CalcLength_X0Z</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CalcLength_Y0Z</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_GammaN_A</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsCorrosion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HasStiff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TrussElem_FullEffortsMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IsTrueBeamMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SteelDesignType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SteelSeismicCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SlaveGroup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Corrosion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SteelMarkUser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SpecialSteelCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SpecialLargeSpanCoef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepOutPlane_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_CoeffTorsionBuckling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EC_LengthTorsionBuckling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectSNIPCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectSNIPLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectSNIPLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementSNIPCheckEx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementExSNIPLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DisplacementExSNIPLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectECCheck</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectECLimit_L</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DeflectECLimit_Abs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bPostbuckling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CoefFibMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StiffStep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Rod_SelectHeight_NotGreatThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_Rod_SelectHeight_NotGreatThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Rod_SelectHeight_NotLessThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_Rod_SelectHeight_NotLessThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Rod_SelectWidth_NotGreatThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_Rod_SelectWidth_NotGreatThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_Rod_SelectWidth_NotLessThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_Rod_SelectWidth_NotLessThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">сheck_Rod_SelectReducedThickness_NotLessThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_Rod_SelectReducedThickness_NotLessThan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C_EffType_TorsionBuckling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EffType_XoZ</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EffType_YoZ</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CriticalMoment_za</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CriticalMoment_MomentRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CriticalMoment_MomentType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CriticalMoment_LoadType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">StepOutPlane_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CriticalMoment_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">CriticalMoment_kw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SteelIsRollForming</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_UseUserDefined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_t0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_Ad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_Av</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_PostsProfileBaseName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_PostsProfileSectionIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_PostsStrIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_StrutsProfileBaseName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_StrutsProfileSectionIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lattice_StrutsStrIndex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscad_lib.editor.editor_models.SteelElem" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Добавляет новую группу конструктивных стальных элементов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>IsGroup</strong> (<em>uint</em>) – Группа конструктивного элемента</p></li>
+<li><p><strong>SteelMark</strong> (<em>str</em><em>, </em><em>optional</em>) – <p>Марка стали, defaults to None</p>
+<p>»C235», «C245», «C255», …</p>
+</p></li>
+<li><p><strong>ContructionType</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Тип конструкции, defaults to None</p>
+<p>0 - элемент общего вида, 1 - стойка, 2 - балка,</p>
+<p>3 - элемент пояса фермы, 4 - элемент решетки фермы,</p>
+<p>5 - опорный раскос фермы, 6 - опорная стойка фермы</p>
+</p></li>
+<li><p><strong>IndexSchema</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Номер схемы вариации, defaults to None</p>
+<p>Нумерация от 0</p>
+</p></li>
+<li><p><strong>bSnip</strong> (<em>bool</em><em>, </em><em>optional</em>) – Расчетные длины по СНиП, defaults to True</p></li>
+<li><p><strong>bNoPlastic</strong> (<em>bool</em><em>, </em><em>optional</em>) – Сечение работает только упруго, defaults to False</p></li>
+<li><p><strong>Ry</strong> (<em>flout</em><em>, </em><em>optional</em>) – Расчетное сопротивление Ry, если не задана марка стали, defaults to None</p></li>
+<li><p><strong>m_GammaN</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент надежности по ответственности (первое предельное состояние), defaults to 1</p></li>
+<li><p><strong>Koef_usl_rab</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент условий работы, defaults to 1</p></li>
+<li><p><strong>Koef_RasLen_XoZ</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент расчетной длины в плоскости XoZ, defaults to 1</p></li>
+<li><p><strong>Koef_RasLen_YoZ</strong> (<em>uint</em><em>, </em><em>optional</em>) – Коэффициент расчетной длины в плоскости YoZ, defaults to 1</p></li>
+<li><p><strong>Lim_gibkA</strong> (<em>flout</em><em>, </em><em>optional</em>) – Предельная гибкость при сжатия, defaults to None</p></li>
+<li><p><strong>Lim_gibkB</strong> (<em>flout</em><em>, </em><em>optional</em>) – Предельная гибкость при растяжения, defaults to None</p></li>
+<li><p><strong>StepOutPlane_linear</strong> (<em>uint</em><em>, </em><em>optional</em>) – Шаг раскрепления из плоскости (линейные размеры), defaults to 0</p></li>
+<li><p><strong>Lim_gibkA_Angle</strong> (<em>flout</em><em>, </em><em>optional</em>) – Предельная гибкость для сжатия, defaults to None</p></li>
+<li><p><strong>Lim_gibkB_Angle</strong> (<em>flout</em><em>, </em><em>optional</em>) – Предельная гибкость для растяжения, defaults to None</p></li>
+<li><p><strong>CalcLength_X0Z</strong> (<em>uint</em><em>, </em><em>optional</em>) – Расчетная длина в плоскости XoZ (линейные размеры), defaults to 1</p></li>
+<li><p><strong>CalcLength_Y0Z</strong> (<em>uint</em><em>, </em><em>optional</em>) – Расчетная длина плоскости YoZ (линейные размеры), defaults to 1</p></li>
+<li><p><strong>m_GammaN_A</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент надежности по ответственности (аварийное состояние), defaults to None</p></li>
+<li><p><strong>DisplacementCheck</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementCheck[10]: признак использования ограничения по перемещениям , defaults to (0,0,0,0,0, 0,0,0,0,0)</p></li>
+<li><p><strong>DisplacementLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementLimit_L[10]:ограничение по перемещениям относительно длины элемента , defaults to (0,0,0,0,0, 0,0,0,0,0)</p></li>
+<li><p><strong>IsCorrosion</strong> (<em>bool</em><em>, </em><em>optional</em>) – Наличие коррозии, defaults to False</p></li>
+<li><p><strong>HasStiff</strong> (<em>bool</em><em>, </em><em>optional</em>) – Наличие ребер жесткости, defaults to False</p></li>
+<li><p><strong>TrussElem_FullEffortsMode</strong> (<em>bool</em><em>, </em><em>optional</em>) – Режим полного набора усилий для элемента фермы, defaults to False</p></li>
+<li><p><strong>IsTrueBeamMode</strong> (<em>bool</em><em>, </em><em>optional</em>) – Признак разреной балки (не холодногнутое сечение СП), defaults to False</p></li>
+<li><p><strong>SteelDesignType</strong> (<em>uint</em><em>, </em><em>optional</em>) – Определение типа сечения, defaults to 0</p></li>
+<li><p><strong>SteelSeismicCoef</strong> (<em>tuple</em><em>, </em><em>optional</em>) – <p>SteelSeismicCoef[2]: сейсмические коэффициенты, defaults to (0,0)</p>
+<p>SteelSeismicCoef[0] - Расчет на прочность при сейсмике;</p>
+<p>SteelSeismicCoef[1] - Расчет на устойчивость при сейсмике</p>
+</p></li>
+<li><p><strong>SlaveGroup</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Определение группы конструктивного элемента, defaults to None</p>
+<p>1 - дополнительная группа, 0 - основная группа</p>
+</p></li>
+<li><p><strong>Corrosion</strong> (<em>flout</em><em>, </em><em>optional</em>) – Толщина слоя коррозии, defaults to None</p></li>
+<li><p><strong>DisplacementLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementLimit_Abs[10]: абсолютное ограничение по перемещениям (линейные размеры), defaults to (0,0,0,0,0, 0,0,0,0,0)</p></li>
+<li><p><strong>SteelMarkUser</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя стали, defaults to None</p></li>
+<li><p><strong>SpecialSteelCoef</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент при особых (не сейсмических) воздействиях, defaults to None</p></li>
+<li><p><strong>SpecialLargeSpanCoef</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент понижающий расчетное сопротивление, defaults to None</p></li>
+<li><p><strong>StepOutPlane_ratio</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент расстояния между раскреплениями к геометрической длине (устойчивость плоской формы изгиба), defaults to 1</p></li>
+<li><p><strong>EC_CoeffTorsionBuckling</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент (устойчивость крутильной формы), defaults to None</p></li>
+<li><p><strong>EC_LengthTorsionBuckling</strong> (<em>flout</em><em>, </em><em>optional</em>) – Расчетная длина (устойчивость крутильной формы), defaults to None</p></li>
+<li><p><strong>DeflectSNIPCheck</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectSNIPCheck[6]: признак использования ограничения по прогибу , defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectSNIPLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectSNIPLimit_L[6]: ограничение по прогибу относительно длины элемента, defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectSNIPLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectSNIPLimit_Abs[6]: абсолютное ограничение по прогибу (линейные размеры), defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DisplacementSNIPCheckEx</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementSNIPCheckEx[2]: признак использования ограничения по перемещениям , defaults to (0,0)</p></li>
+<li><p><strong>DisplacementExSNIPLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementExSNIPLimit_L[2]: ограничение по перемещениям относительно длины элемента , defaults to (0,0)</p></li>
+<li><p><strong>DisplacementExSNIPLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DisplacementExSNIPLimit_Abs[2]: абсолютное ограничение по перемещениям (линейные размеры), defaults to (0,0)</p></li>
+<li><p><strong>DeflectECCheck</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectECCheck[6]: признак использования ограничения по прогибу, defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectECLimit_L</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectECLimit_L[6]: ограничение по прогибу относительно длины элемента, defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>DeflectECLimit_Abs</strong> (<em>tuple</em><em>, </em><em>optional</em>) – DeflectECLimit_Abs[6]: абсолютное ограничение по прогибу (линейные размеры) , defaults to (0,0,0, 0,0,0)</p></li>
+<li><p><strong>bPostbuckling</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1 – (работа с гибкой стенкой не допускается) , defaults to 1</p></li>
+<li><p><strong>CoefFibMode</strong> (<em>flout</em><em>, </em><em>optional</em>) – Тип эпюры для fib, defaults to None</p></li>
+<li><p><strong>StiffStep</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг ребер, defaults to None</p></li>
+<li><p><strong>check_Rod_SelectHeight_NotGreatThan</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1- учитывать ограничения по высоте (не более чем), defaults to None</p></li>
+<li><p><strong>value_Rod_SelectHeight_NotGreatThan</strong> (<em>flout</em><em>, </em><em>optional</em>) – Ограничение по высоте (не более чем), defaults to None</p></li>
+<li><p><strong>check_Rod_SelectHeight_NotLessThan</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1- учитывать ограничения по высоте (не менее чем), defaults to None</p></li>
+<li><p><strong>value_Rod_SelectHeight_NotLessThan</strong> (<em>flout</em><em>, </em><em>optional</em>) – Ограничение по высоте (не менее чем), defaults to None</p></li>
+<li><p><strong>check_Rod_SelectWidth_NotGreatThan</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1- учитывать ограничения по ширине (не более чем), defaults to None</p></li>
+<li><p><strong>value_Rod_SelectWidth_NotGreatThan</strong> (<em>flout</em><em>, </em><em>optional</em>) – Ограничение по ширине (не более чем), defaults to None</p></li>
+<li><p><strong>check_Rod_SelectWidth_NotLessThan</strong> (<em>uint</em><em>, </em><em>optional</em>) – 1- учитывать ограничения по ширине (не менее чем), defaults to None</p></li>
+<li><p><strong>value_Rod_SelectWidth_NotLessThan</strong> (<em>flout</em><em>, </em><em>optional</em>) – Ограничение по ширине (не менее чем), defaults to None</p></li>
+<li><p><strong>сheck_Rod_SelectReducedThickness_NotLessThan</strong> (<em>bool</em><em>, </em><em>optional</em>) – Подбирать сечения с приведенной толщиной не менее, defaults to None</p></li>
+<li><p><strong>value_Rod_SelectReducedThickness_NotLessThan</strong> (<em>uint</em><em>, </em><em>optional</em>) – Ограничение сечения с приведенной толщиной не менее, defaults to None</p></li>
+<li><p><strong>C_EffType_TorsionBuckling</strong> (<em>uint</em><em>, </em><em>optional</em>) – 0 - задан EC_CoeffTorsionBuckling, 1 - задан EC_LengthTorsionBuckling, defaults to None</p></li>
+<li><p><strong>EffType_XoZ</strong> (<em>uint</em><em>, </em><em>optional</em>) – 0 - задан Koef_RasLen_XoZ, 1 - задан CalcLength_X0Z, defaults to 0</p></li>
+<li><p><strong>EffType_YoZ</strong> (<em>uint</em><em>, </em><em>optional</em>) – 0 - задан Koef_RasLen_YoZ, 1 - задан CalcLength_Y0Z, defaults to 0</p></li>
+<li><p><strong>CriticalMoment_za</strong> (<em>flout</em><em>, </em><em>optional</em>) – Данные критического момента (EN или холодногнутые профили) положение точки приложения нагрузки, defaults to None</p></li>
+<li><p><strong>CriticalMoment_MomentRatio</strong> (<em>flout</em><em>, </em><em>optional</em>) – Данные критического момента (EN или холодногнутые профили) соотношение концевых моментов, defaults to None</p></li>
+<li><p><strong>CriticalMoment_MomentType</strong> (<em>flout</em><em>, </em><em>optional</em>) – Данные критического момента (EN или холодногнутые профили) тип эпюры моментов, defaults to None</p></li>
+<li><p><strong>CriticalMoment_LoadType</strong> (<em>flout</em><em>, </em><em>optional</em>) – Данные критического момента (EN или холодногнутые профили) расположение нагрузки, defaults to None</p></li>
+<li><p><strong>StepOutPlane_type</strong> (<em>uint</em><em>, </em><em>optional</em>) – 0 - задан StepOutPlane_ratio, 1 - задан StepOutPlane_linear, defaults to 0</p></li>
+<li><p><strong>CriticalMoment_k</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент расчетной длины, зависящие от условий закреплений, опорных сечений (поворот из плоскости изгиба), defaults to None</p></li>
+<li><p><strong>CriticalMoment_kw</strong> (<em>flout</em><em>, </em><em>optional</em>) – Коэффициент расчетной длины, зависящие от условий закреплений опорных сечений (депланация), defaults to None</p></li>
+<li><p><strong>SteelIsRollForming</strong> (<em>flout</em><em>, </em><em>optional</em>) – Роликовое профилирование листового металла (холодногнутые профили по EN), defaults to None</p></li>
+<li><p><strong>Lattice_UseUserDefined</strong> (<em>uint</em><em>, </em><em>optional</em>) – Решетка задана пользователем (сквозные сечения), defaults to None</p></li>
+<li><p><strong>Lattice_type</strong> (<em>uint</em><em>, </em><em>optional</em>) – <p>Тип решетки, defaults to None</p>
+<p>0 - Default,</p>
+<p>1 - на планках (СНиП, EN),</p>
+<p>2 - раскосная решетка (СНиП, EN),</p>
+<p>3 - треугольная решетка с распорками (СНиП, EN),</p>
+<p>4 - крестовая решетка с распорками (СНиП),</p>
+<p>5 - крестовая решетка (СНиП),</p>
+<p>6- треугольная решетка (EN)</p>
+<p>См. таблицу документации «Типы решеток» в документации «Пользовательские расширения», поставляется со SCAD++.</p>
+</p></li>
+<li><p><strong>Lattice_s</strong> (<em>flout</em><em>, </em><em>optional</em>) – Шаг решетки, defaults to None</p></li>
+<li><p><strong>Lattice_b</strong> (<em>flout</em><em>, </em><em>optional</em>) – Ширина планки, defaults to None</p></li>
+<li><p><strong>Lattice_t0</strong> (<em>flout</em><em>, </em><em>optional</em>) – Толщина планки, defaults to None</p></li>
+<li><p><strong>Lattice_Ad</strong> (<em>flout</em><em>, </em><em>optional</em>) – Площадь раскосов, defaults to None</p></li>
+<li><p><strong>Lattice_Av</strong> (<em>flout</em><em>, </em><em>optional</em>) – Площадь стоек, defaults to None</p></li>
+<li><p><strong>Lattice_PostsProfileBaseName</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя базы профиля стоек решетки, defaults to «»</p></li>
+<li><p><strong>Lattice_PostsProfileSectionIndex</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер раздела профиля стоек решетки, defaults to None</p></li>
+<li><p><strong>Lattice_PostsStrIndex</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер профиля стоек решетки, defaults to None</p></li>
+<li><p><strong>Lattice_StrutsProfileBaseName</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя базы профиля раскосов решетки, defaults to «»</p></li>
+<li><p><strong>Lattice_StrutsProfileSectionIndex</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер раздела профиля раскосов решетки, defaults to None</p></li>
+<li><p><strong>Lattice_StrutsStrIndex</strong> (<em>uint</em><em>, </em><em>optional</em>) – Номер профиля раскосов решетки, defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pyscad_lib.editor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyscad_lib.editor" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="pyscad_lib.html" class="btn btn-neutral float-left" title="pyscad_lib package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="pyscad_lib.model.html" class="btn btn-neutral float-right" title="pyscad_lib.model package" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ScadSoft.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

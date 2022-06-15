@@ -1,0 +1,21 @@
+pyscad\_lib.editor package
+==========================
+
+Submodules
+----------
+
+pyscad\_lib.editor.editor\_models module
+----------------------------------------
+
+.. automodule:: pyscad_lib.editor.editor_models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pyscad_lib.editor
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,33 @@
+pyscad\_lib package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pyscad_lib.editor
+   pyscad_lib.model
+   pyscad_lib.result
+   pyscad_lib.setting
+   pyscad_lib.view
+
+Submodules
+----------
+
+pyscad\_lib.pyscad module
+-------------------------
+
+.. automodule:: pyscad_lib.pyscad
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pyscad_lib
+   :members:
+   :undoc-members:
+   :show-inheritance:

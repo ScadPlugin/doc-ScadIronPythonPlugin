@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Быстрый старт &mdash; документация Scad IronPython Plugins 1.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="pyscad_lib" href="modules.html" />
+    <link rel="prev" title="SCAD++ IronPython Plugins" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Scad IronPython Plugins
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Документация библиотеки:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Быстрый старт</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#jscript-scad">Информация по пользовательским расширениям на основе JScript в SCAD++</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Директория плагинов</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#preprocessor">PreProcessor (Препроцессоры)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#postprocessor">PostProcessor(Постпроцессоры)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Установка</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">pyscad_lib</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="createplugin.html">Создание плагина</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="additionally.html">Дополнительно</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Scad IronPython Plugins</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Быстрый старт</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Быстрый старт<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<section id="jscript-scad">
+<h2>Информация по пользовательским расширениям на основе JScript в SCAD++<a class="headerlink" href="#jscript-scad" title="Permalink to this heading"></a></h2>
+<p>Прежде всего стоит ознакомиться с документацией «Пользовательских расширений», а именно с файлом <strong>SCAD_Plugins.pdf</strong>,
+он находится в <strong>C:\SCAD Soft\SCAD Office (стандартная директория)</strong></p>
+<section id="id2">
+<h3>Директория плагинов<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>Стандартное расположение папок в <strong>C:ProgramDataSCAD SoftPlugins (%ALLUSERSPROFILE%SCAD SoftPlugins)</strong>. Тут хранятся 2 основные директории для плагинов:</p>
+<ul class="simple">
+<li><p>PreProcessor(Препроцессоры)</p></li>
+<li><p>PostProcessor(Постпроцессоры)</p></li>
+</ul>
+<section id="preprocessor">
+<h4>PreProcessor (Препроцессоры)<a class="headerlink" href="#preprocessor" title="Permalink to this heading"></a></h4>
+<p>Стандартное расположение <strong>C:\ProgramData\SCAD Soft\Plugins\PreProcessor</strong>
+<strong>(%ALLUSERSPROFILE%\SCAD Soft\Plugins\PreProcessor)</strong> - корневая папка,
+содержащая все пользовательские расширения для режима задания исходных данных.
+Все плагины которые хранятся в этой директории видны только из окна Расчетная схема.
+Основные возможности:</p>
+<ul class="simple">
+<li><p>Создание геометрии</p></li>
+<li><p>Задания загружения</p></li>
+<li><p>Задание жесткостей</p></li>
+<li><p>Задание РСУ</p></li>
+<li><p>Задание комбинации загружений</p></li>
+<li><p>Задание групп армирования</p></li>
+<li><p>Задание групп металлических конструкций</p></li>
+<li><p>Получение информации о схеме и ее свойствах</p></li>
+</ul>
+</section>
+<section id="postprocessor">
+<h4>PostProcessor(Постпроцессоры)<a class="headerlink" href="#postprocessor" title="Permalink to this heading"></a></h4>
+<p>Стандартное расположение <strong>C:\ProgramData\SCAD Soft\Plugins\PreProcessor</strong>
+<strong>(%ALLUSERSPROFILE%\SCAD Soft\Plugins\PreProcessor)</strong> - корневая папка,
+содержащая все пользовательские расширения для режима анализа результатов.
+Все плагины которые хранятся в этой директории видны только из окна Графический анализ.
+Основные возможности:</p>
+<ul class="simple">
+<li><p>Обработка результатов расчета</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id3">
+<h2>Установка<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Для работы с библиотекой требуется установить компоненты библиотеки -&gt; <a class="reference external" href="#">Скачать</a></p></li>
+<li><p>При установке необходимо указать путь к папке пользовательских плагинов,
+по умолчанию установка ведется по пути - <strong>C:ProgramDataSCAD SoftPlugins</strong> (путь по умолчанию при установке SCAD++).
+В случае расположении папки <strong>Plugins</strong> по другому пути указать путь к ней при установке</p></li>
+</ol>
+<img alt="_images/setup_path.png" src="_images/setup_path.png" />
+<ol class="arabic simple" start="3">
+<li><p>В папку <strong>Plugins</strong> устанавливаются следующие директории:</p>
+<ul class="simple">
+<li><p><strong>pyscad_lib</strong>                        - содержит основные файлы библиотеки</p></li>
+<li><p><strong>PreProcessor/EditorExamplePy</strong>      - Пример создания геометрии в SCAD++</p></li>
+<li><p><strong>PreProcessor/Export2ExcelPy</strong>       - Пример вывода информации о схеме в Excel</p></li>
+<li><p><strong>PostProcessor/Export2ExcelPyPost</strong>  - Пример вывода информации о расчете в Excel</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="index.html" class="btn btn-neutral float-left" title="SCAD++ IronPython Plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="modules.html" class="btn btn-neutral float-right" title="pyscad_lib" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ScadSoft.</p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
